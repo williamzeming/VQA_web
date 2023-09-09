@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')  # 渲染打包好的React App的页面
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run('127.0.0.1', port=8989, debug=True)
