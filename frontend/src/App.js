@@ -1,22 +1,32 @@
 import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
-import {makeStyles} from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import {Document, Page} from "react-pdf";
-import PDFViewer from "./PDFViewer";
-
+import Button from "@material-ui/core/Button";
+import Grid from '@material-ui/core/Grid';
+import PDFUploader from "./PDFUploader";
+import ChatBox from "./ChatBox";
+import simple from './simple_img.png'
+const hidden_input = {
+    display: 'none',
+};
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>VQA is Query Application!</h1>
-                <p>Hello World!!!</p>
-                <PDFViewer />
+                <h1 align='center'>VQA is Query Application!</h1>
+                <div align='left'>
+                    <img src={simple} height={"500px"}/>
+                </div>
+                <div align='left'>
+                    <ChatBox />
+                </div>
+                <div align='left'>
+                    <PDFUploader />
+                </div>
+
             </div>
-        );
+
+
+        )
     }
 }
 
