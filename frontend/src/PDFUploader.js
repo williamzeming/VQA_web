@@ -51,7 +51,7 @@ function PDFUploader() {
                     <AttachFileIcon />
                 </IconButton>
             </label>
-            <Input type="file" accept="application/pdf" id="pdfInput" className={classes.input} color="primary"/>
+            <input type="file" accept="application/pdf" id="pdfInput" className={classes.input} color="primary"/>
             <Button type="submit" variant="contained" color="primary">upload</Button>
         </form>
     </div>

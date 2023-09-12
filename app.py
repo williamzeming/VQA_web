@@ -13,7 +13,6 @@ def index():
     return render_template('index.html')
 
 
-# 上传文件夹的配置
 UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'pdf'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
