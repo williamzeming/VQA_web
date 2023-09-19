@@ -13,6 +13,32 @@ import Avatar from '@material-ui/core/Avatar';
 import ImageIcon from '@material-ui/icons/Image';
 import WorkIcon from '@material-ui/icons/Work';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
+import PictureAsPdfSharpIcon from '@mui/icons-material/PictureAsPdfSharp';
+import {Divider, ListSubheader, Paper} from "@mui/material";
+import {FixedSizeList} from 'react-window';
+import PropTypes from 'prop-types';
+
+function renderRow(props) {
+    const {index, style} = props;
+
+    return (
+        <div>
+            <ListItem button style={style} key={index}>
+            <ListItemAvatar>
+            <Avatar>
+                <PictureAsPdfSharpIcon/>
+            </Avatar>
+            </ListItemAvatar>
+            <ListItemText primary={`Filename ${index + 1}`} secondary="File path"/>
+            </ListItem>
+        </div>
+    );
+}
+
+renderRow.propTypes = {
+    index: PropTypes.number.isRequired,
+    style: PropTypes.object.isRequired,
+};
 
 
 class App extends React.Component {
@@ -22,33 +48,38 @@ class App extends React.Component {
                 <h1 align='center'>VQA is Query Application!</h1>
                 <Grid container>
                     <Grid item xs={2}>
-                        <List>
-                            <ListItem button>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <ImageIcon/>
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText primary="Photos" secondary="Jan 9, 2014"/>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <WorkIcon/>
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText primary="Work" secondary="Jan 7, 2014"/>
-                            </ListItem>
-                            <ListItem>
-                                <ListItemAvatar>
-                                    <Avatar>
-                                        <BeachAccessIcon/>
-                                    </Avatar>
-                                </ListItemAvatar>
-                                <ListItemText primary="Vacation" secondary="July 20, 2014"/>
-                            </ListItem>
-                        </List>
-
+                        <Paper elevation={2} style={{backgroundColor: 'white'}} sx={{
+                            borderColor: 'black',
+                            borderWidth: 2,
+                            borderStyle: 'solid'
+                        }}>
+                            <ListSubheader>Uploaded Files</ListSubheader>
+                            <FixedSizeList height={800} itemSize={60} itemCount={10}>
+                                {renderRow}
+                            </FixedSizeList>
+                            <List>
+                                <ListSubheader>Uploaded Files</ListSubheader>
+                                <ListItem button
+                                          style={{backgroundColor: 'grey.100', marginBottom: 4}}>
+                                    <ListItemAvatar>
+                                        <Avatar>
+                                            <PictureAsPdfSharpIcon/>
+                                        </Avatar>
+                                    </ListItemAvatar>
+                                    <ListItemText primary="Filename 1" secondary="File path"/>
+                                </ListItem>
+                                <Divider/>
+                                <ListItem button
+                                          style={{backgroundColor: 'grey.100', marginBottom: 2}}>
+                                    <ListItemAvatar>
+                                        <Avatar>
+                                            <PictureAsPdfSharpIcon/>
+                                        </Avatar>
+                                    </ListItemAvatar>
+                                    <ListItemText primary="Filename 2" secondary="File path"/>
+                                </ListItem>
+                            </List>
+                        </Paper>
 
                     </Grid>
                     <Grid item xs={10}>
