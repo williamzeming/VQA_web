@@ -46,7 +46,7 @@ class App extends React.Component {
         return (
             <div>
                 <h1 align='center'>VQA is Query Application!</h1>
-                <Grid container>
+                <Grid container spacing={3}>
                     <Grid item xs={2}>
                         <Paper elevation={2} style={{backgroundColor: 'white'}} sx={{
                             borderColor: 'black',
@@ -54,31 +54,9 @@ class App extends React.Component {
                             borderStyle: 'solid'
                         }}>
                             <ListSubheader>Uploaded Files</ListSubheader>
-                            <FixedSizeList height={800} itemSize={60} itemCount={10}>
+                            <FixedSizeList height={600} itemSize={60} itemCount={15}>
                                 {renderRow}
                             </FixedSizeList>
-                            <List>
-                                <ListSubheader>Uploaded Files</ListSubheader>
-                                <ListItem button
-                                          style={{backgroundColor: 'grey.100', marginBottom: 4}}>
-                                    <ListItemAvatar>
-                                        <Avatar>
-                                            <PictureAsPdfSharpIcon/>
-                                        </Avatar>
-                                    </ListItemAvatar>
-                                    <ListItemText primary="Filename 1" secondary="File path"/>
-                                </ListItem>
-                                <Divider/>
-                                <ListItem button
-                                          style={{backgroundColor: 'grey.100', marginBottom: 2}}>
-                                    <ListItemAvatar>
-                                        <Avatar>
-                                            <PictureAsPdfSharpIcon/>
-                                        </Avatar>
-                                    </ListItemAvatar>
-                                    <ListItemText primary="Filename 2" secondary="File path"/>
-                                </ListItem>
-                            </List>
                         </Paper>
 
                     </Grid>
