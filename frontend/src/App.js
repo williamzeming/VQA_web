@@ -24,12 +24,12 @@ function renderRow(props) {
     return (
         <div>
             <ListItem button style={style} key={index}>
-            <ListItemAvatar>
-            <Avatar>
-                <PictureAsPdfSharpIcon/>
-            </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary={`Filename ${index + 1}`} secondary="File path"/>
+                <ListItemAvatar>
+                    <Avatar>
+                        <PictureAsPdfSharpIcon/>
+                    </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary={`Filename ${index + 1}`} secondary="File path"/>
             </ListItem>
         </div>
     );
@@ -60,25 +60,24 @@ class App extends React.Component {
                         </Paper>
                         <br/>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={4} lg={4}>
                         <div align='center'>
-                            <img src={simple} height={"800px"}/>
+                            <img src={simple} height={"700px"}/>
                         </div>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={5} lg={5}>
                         <div align='left'>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
                             <ChatBox/>
                         </div>
-                        <br />
-                        <Paper elevation={2} style={{backgroundColor: 'white'}} sx={{
-                            borderColor: 'black',
-                            borderWidth: 2,
-                            borderStyle: 'solid'
-                        }}>
-                            <div align='center'>
-                            <PDFUploader/>
-                        </div>
-                        </Paper>
+                        <br/>
+                            <div>
+                                <PDFUploader/>
+                            </div>
+
                     </Grid>
                 </Grid>
             </div>
