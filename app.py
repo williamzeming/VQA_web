@@ -8,6 +8,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 CORS(app)
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -18,7 +19,6 @@ ALLOWED_EXTENSIONS = {'pdf'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
-# 检查文件扩展名是否合法
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
@@ -36,6 +36,7 @@ def upload():
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        print(filepath)
         file.save(filepath)
         return jsonify({"message": "File uploaded successfully", "file": filepath}), 200
 
