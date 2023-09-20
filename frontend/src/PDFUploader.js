@@ -88,7 +88,7 @@ function PDFUploader() {
                                }
                                sx={{mb: 2}}
                         >
-                            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                            <Typography variant="h6">
                                 File uploaded successfully
                             </Typography>
                         </Alert>
@@ -109,7 +109,7 @@ function PDFUploader() {
                                }
                                sx={{mb: 2}}
                         >
-                            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                            <Typography variant="h6">
                                 File uploaded error
                             </Typography>
                         </Alert>

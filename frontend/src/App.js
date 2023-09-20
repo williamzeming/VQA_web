@@ -58,18 +58,27 @@ class App extends React.Component {
                                 {renderRow}
                             </FixedSizeList>
                         </Paper>
-
+                        <br/>
                     </Grid>
-                    <Grid item xs={10}>
-                        <div align='left'>
-                            <img src={simple} height={"500px"}/>
+                    <Grid item xs={4}>
+                        <div align='center'>
+                            <img src={simple} height={"800px"}/>
                         </div>
+                    </Grid>
+                    <Grid item xs={5}>
                         <div align='left'>
                             <ChatBox/>
                         </div>
-                        <div align='left'>
+                        <br />
+                        <Paper elevation={2} style={{backgroundColor: 'white'}} sx={{
+                            borderColor: 'black',
+                            borderWidth: 2,
+                            borderStyle: 'solid'
+                        }}>
+                            <div align='center'>
                             <PDFUploader/>
                         </div>
+                        </Paper>
                     </Grid>
                 </Grid>
             </div>

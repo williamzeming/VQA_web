@@ -1,17 +1,18 @@
 import os
 
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_uploads import UploadSet, configure_uploads, DOCUMENTS, patch_request_class
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder="webroot")
 CORS(app)
 
 
 @app.route('/')
+# @app.route('/<path:path>')
 def index():
-    return render_template('index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 
 UPLOAD_FOLDER = './uploads'
@@ -36,7 +37,6 @@ def upload():
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        print(filepath)
         file.save(filepath)
         return jsonify({"message": "File uploaded successfully", "file": filepath}), 200
 
