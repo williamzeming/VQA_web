@@ -16,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     input: {
-        display: 'none',
+            display: 'none',
+        },
+    button: {
+        marginRight: theme.spacing(2),  // 增加按钮之间的间距
     },
 }));
 
@@ -58,9 +61,7 @@ function PDFUploader() {
             <div>
                 <form onSubmit={handleUpload}>
                     <label htmlFor="pdfInput">
-                        <IconButton color="secondary" aria-label="upload picture" component="span">
-                            <AttachFileIcon/>
-                        </IconButton>
+                        <Button aria-label="upload picture" variant="outlined" component="span" color="primary" className={classes.button}>Choose a PDF</Button>
                     </label>
                     <input type="file" accept="application/pdf" id="pdfInput" className={classes.input}
                            color="primary"/>

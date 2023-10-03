@@ -4,23 +4,25 @@ import Button from "@material-ui/core/Button";
 import Grid from '@material-ui/core/Grid';
 import PDFUploader from "./PDFUploader";
 import ChatBox from "./ChatBox";
-import simple from './simple_img.png'
-
-import List from '@material-ui/core/List';
+import Container from '@mui/material/Container';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
-import ImageIcon from '@material-ui/icons/Image';
-import WorkIcon from '@material-ui/icons/Work';
-import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import PictureAsPdfSharpIcon from '@mui/icons-material/PictureAsPdfSharp';
 import {Divider, ListSubheader, Paper} from "@mui/material";
 import {FixedSizeList} from 'react-window';
-import pdf from "./a075795_e2801187_2007ps_final_070823_14413304_1.pdf"
+import './App.css';
 
 
 function App() {
+
+    const uploadButton = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'flex-start'
+    };
+
     const [files, setFiles] = useState([]);
     const [pdfUrl, setPdfUrl] = useState("");
 
@@ -65,55 +67,51 @@ function App() {
     };
 
     return (
-        <div>
-            <h1 align='center'>VQA is Query Application!</h1>
-            <Grid container spacing={3}>
-                <Grid item xs={2}>
-                    <Paper elevation={2} style={{backgroundColor: 'white'}} sx={{
-                        borderColor: 'black',
-                        borderWidth: 2,
-                        borderStyle: 'solid'
-                    }}>
-                        <ListSubheader>Uploaded Files</ListSubheader>
-                        <FixedSizeList height={600} itemSize={60} itemCount={files.length}>
-                            {renderRow}
-                        </FixedSizeList>
-                    </Paper>
-                    <br/>
-                </Grid>
-                <Grid item xs={5} lg={5}>
-                    <div align='center'>
-                        <div className="App">
-                            {pdfUrl ? (
-                                <iframe
-                                    src={pdfUrl}
-                                    width="600"
-                                    height="800"
-                                    type="application/pdf"
-                                >
-                                </iframe>
-                            ) : (
-                                <p>Loading PDF...</p>
-                            )}
+        <div >
+            {/*<Container maxWidth='xl' style={{backgroundColor: 'aliceblue'}}>*/}
+                <h1 align='center'>VQA is Query Application!</h1>
+                <Grid container spacing={3}>
+                    <Grid item xs={3} md={3}  lg={2} xl={1}>
+                        <Paper elevation={2} style={{backgroundColor: 'white'}} sx={{
+                            borderColor: 'black',
+                            borderWidth: 2,
+                            borderStyle: 'solid'
+                        }}>
+                            <ListSubheader>Uploaded Files</ListSubheader>
+                            <FixedSizeList height={750} itemSize={50} itemCount={files.length}>
+                                {renderRow}
+                            </FixedSizeList>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={4} md={5} lg={5} xl={5}>
+                        <div align='center'>
+                            <div className="App">
+                                {pdfUrl ? (
+                                    <iframe
+                                        src={pdfUrl}
+                                        width="100%"
+                                        height="800"
+                                        type="application/pdf"
+                                        className="PdfFrame"
+                                    >
+                                    </iframe>
+                                ) : (
+                                    <p>Loading PDF...</p>
+                                )}
+                            </div>
                         </div>
-                    </div>
+                    </Grid>
+                    <Grid item xs={3} md={4} lg={5} xl={6}>
+                        <div align='left'>
+                            <ChatBox/>
+                        </div>
+                        <br/>
+                    </Grid>
                 </Grid>
-                <Grid item xs={4} lg={4}>
-                    <div align='left'>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <ChatBox/>
-                    </div>
-                    <br/>
-                    <div>
-                        <PDFUploader/>
-                    </div>
-
-                </Grid>
-            </Grid>
+                <div style={uploadButton}>
+                    <PDFUploader/>
+                </div>
+            {/*</Container>*/}
         </div>
 
 
