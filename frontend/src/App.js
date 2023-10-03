@@ -70,7 +70,7 @@ function App() {
         <div >
             {/*<Container maxWidth='xl' style={{backgroundColor: 'aliceblue'}}>*/}
                 <h1 align='center'>VQA is Query Application!</h1>
-                <Grid container spacing={3}>
+                <Grid container spacing={2}>
                     <Grid item xs={3} md={3}  lg={2} xl={1}>
                         <Paper elevation={2} style={{backgroundColor: 'white'}} sx={{
                             borderColor: 'black',
