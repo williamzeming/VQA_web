@@ -1,0 +1,122 @@
+import json
+import os
+import cv2
+import fitz
+from pdfminer.converter import PDFPageAggregator
+from pdfminer.layout import LAParams, LTTextBox, LTFigure
+from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.pdfpage import PDFPage
+from tqdm import tqdm
+
+
+def get_bbox(sizeRatioW, sizeRatioH, pageW, pageH, bbox):
+    return int(bbox[0] * sizeRatioW), int(pageH - bbox[1] * sizeRatioH), int(bbox[2] * sizeRatioW), int(
+        pageH - bbox[3] * sizeRatioH)
+
+
+def pdftoimg(filepath, imgpath):
+    """
+    Transform PDF file to images.
+
+    filepath: pdf file path
+    imgpath: folder path to store images
+    """
+    doc = fitz.open(filepath)
+    i = 0
+    pdfname = filepath.split('.')[0].split('\\')[-1]
+    for page in doc:
+        i += 1
+        pix = page.get_pixmap()
+        img_name = "{}_page-{}.png".format(pdfname, page.number)
+        pix.save(os.path.join(imgpath, img_name))
+
+
+def extract_text(file_path, file_list, img_without_bbox, img_with_bbox, img_textlines):
+    """
+    Extract text line information from PDF.
+
+    file_path: folder path that store the PDF files
+    file_list: list of PDF files
+    img_without_bbox: folder path that store the image without bounding box
+    img_with_bbox: folder path that store the image with bounding box
+    img_textlies: folder path that sore the textline json file for each images
+    """
+    count = 0
+    error_pages = {}
+    for todo_file in tqdm(file_list):
+        count += 1
+
+        doc_path = file_path + todo_file
+        file_name = todo_file[:-4]
+        pdftoimg(doc_path, img_without_bbox)
+
+        document = open(doc_path, 'rb')
+        # Create resource manager
+        rsrcmgr = PDFResourceManager()
+        # Set parameters for analysis.
+        laparams = LAParams()
+        # Create a PDF page aggregator object.
+        device = PDFPageAggregator(rsrcmgr, laparams=laparams)
+        interpreter = PDFPageInterpreter(rsrcmgr, device)
+        page_num = 0
+
+        print("Now processing : ", count)
+        try:
+            for page in PDFPage.get_pages(document):
+
+                json_file = {file_name: {}}
+
+                interpreter.process_page(page)
+                # receive the LTPage object for the page.
+                layout = device.get_result()
+                obj_id = 0
+
+                imgFilePath = img_without_bbox + file_name + '_page-' + str(page_num) + '.png'
+
+                img = cv2.imread(imgFilePath, cv2.IMREAD_UNCHANGED)
+
+                imgHeight, imgWidth, imgChannels = img.shape
+
+                pageW = page.mediabox[2]
+                pageH = page.mediabox[3]
+                sizeRatioW = imgWidth / page.mediabox[2]
+                sizeRatioH = imgHeight / page.mediabox[3]
+
+                for lt_obj in layout:
+                    if isinstance(lt_obj, LTTextBox):
+                        for obj in lt_obj:
+                            new_bbox = get_bbox(sizeRatioW, sizeRatioH, pageW, pageH, obj.bbox)  # find text box
+                            cv2.rectangle(img, (new_bbox[0], new_bbox[1]), (new_bbox[2], new_bbox[3]), (0, 0, 255, 255),
+                                          1)  # red
+                            if obj_id not in json_file[file_name]:
+                                json_file[file_name][obj_id] = {}
+                                json_file[file_name][obj_id]['LTTextBox'] = {}
+                                json_file[file_name][obj_id]['LTTextBox']['bbox'] = new_bbox
+                                json_file[file_name][obj_id]['LTTextBox']['text'] = obj.get_text()
+                                obj_id += 1
+
+                    elif isinstance(lt_obj, LTFigure):
+                        for obj in lt_obj:
+                            new_bbox = get_bbox(sizeRatioW, sizeRatioH, pageW, pageH, obj.bbox)  # find text box
+                            cv2.rectangle(img, (new_bbox[0], new_bbox[1]), (new_bbox[2], new_bbox[3]), (0, 255, 0, 255),
+                                          1)  # green
+                            if obj_id not in json_file[file_name]:
+                                json_file[file_name][obj_id] = {}
+                                json_file[file_name][obj_id]['LTFigure'] = {}
+                                json_file[file_name][obj_id]['LTFigure']['bbox'] = new_bbox
+                                obj_id += 1
+
+                # save img
+                img_file = img_with_bbox + file_name + '_page-' + str(page_num) + '.png'
+                cv2.imwrite(img_file, img)
+
+                file_loc = img_textlines + file_name + "_page-" + str(page_num) + ".json"
+
+                with open(file_loc, 'w') as output:
+                    json_str = json.dumps(json_file)
+                    output.write(json_str)
+
+                page_num += 1
+        except Exception as e:
+            error_pages[todo_file] = str(e)
+        return error_pages
