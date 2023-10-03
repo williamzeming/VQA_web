@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import PDFUploader from "./PDFUploader";
 import ChatBox from "./ChatBox";
 import simple from './simple_img.png'
-import PdfPreview from "./pdfPreview";
+
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -19,38 +19,31 @@ import {Divider, ListSubheader, Paper} from "@mui/material";
 import {FixedSizeList} from 'react-window';
 import pdf from "./a075795_e2801187_2007ps_final_070823_14413304_1.pdf"
 
-const handleClick = async (filename) => {
-    console.log(`Filename: ${filename}`);
-
-    try {
-        // 发送文件名到后端并获取文件路径
-        const response = await axios.post('http://127.0.0.1:8988/get_filepath', {
-            filename: filename
-        });
-
-        // 在这里假设返回的数据格式为：{ filepath: 'your_file_path' }
-        console.log('Filepath: ', response.data.filepath);
-
-        // 你可能想要将文件路径设置到组件的状态中，这样你可以在 UI 中显示它
-        // setFilepath(response.data.filepath);
-    } catch (error) {
-        console.error("An error occurred while fetching the file path: ", error);
-    }
-};
 
 function App() {
     const [files, setFiles] = useState([]);
+    const [pdfUrl, setPdfUrl] = useState("");
+
+    const handleClick = async (filename) => {
+        try {
+            const response = await axios.post('http://127.0.0.1:8988/get_filepath', {
+                filename: filename
+            });
+            setPdfUrl(`http://127.0.0.1:8988/pdfs/${encodeURIComponent(response.data.filepath)}`);
+        } catch (error) {
+            console.error("An error occurred while fetching the file path: ", error);
+        }
+    };
 
     useEffect(() => {
         const fetchFiles = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8988/get_files');
+                const response = await axios.get('http://127.0.0.1:8988/get_filelist');
                 setFiles(response.data);
             } catch (error) {
                 console.error("An error occurred while fetching the data: ", error);
             }
         };
-
         fetchFiles();
     }, []);
 
@@ -88,21 +81,24 @@ function App() {
                     </Paper>
                     <br/>
                 </Grid>
-                <Grid item xs={4} lg={4}>
+                <Grid item xs={5} lg={5}>
                     <div align='center'>
                         <div className="App">
-                            {/*<PdfPreview prfUrl={pdf}/>*/}
-                            <iframe
-                                src={pdf}
-                                width="600"
-                                height="800"
-                                type="application/pdf"
-                            >
-                            </iframe>
+                            {pdfUrl ? (
+                                <iframe
+                                    src={pdfUrl}
+                                    width="600"
+                                    height="800"
+                                    type="application/pdf"
+                                >
+                                </iframe>
+                            ) : (
+                                <p>Loading PDF...</p>
+                            )}
                         </div>
                     </div>
                 </Grid>
-                <Grid item xs={5} lg={5}>
+                <Grid item xs={4} lg={4}>
                     <div align='left'>
                         <br/>
                         <br/>

@@ -5,7 +5,7 @@ from flask_uploads import UploadSet, configure_uploads, DOCUMENTS, patch_request
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
-app = Flask(__name__,static_folder="webroot")
+app = Flask(__name__, static_folder="webroot")
 CORS(app)
 
 
@@ -42,7 +42,8 @@ def upload():
 
     return jsonify({"error": "Invalid file type"}), 400
 
-@app.route('/get_files', methods=['GET'])
+
+@app.route('/get_filelist', methods=['GET'])
 def get_files():
     files = os.listdir(app.config['UPLOAD_FOLDER'])
     return jsonify(files)
@@ -51,9 +52,15 @@ def get_files():
 @app.route('/get_filepath', methods=['POST'])
 def get_filepath():
     filename = request.json.get('filename')
-    filepath = "uploads/"+filename
+    filepath = filename
     print(filepath)
     return jsonify(filepath=filepath)
+
+
+@app.route('/pdfs/<filename>', methods=['GET'])
+def serve_pdf(filename):
+    return send_from_directory(directory='uploads', path=filename)
+
 
 if __name__ == '__main__':
     app.run('127.0.0.1', port=8988, debug=True)
