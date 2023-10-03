@@ -42,6 +42,18 @@ def upload():
 
     return jsonify({"error": "Invalid file type"}), 400
 
+@app.route('/get_files', methods=['GET'])
+def get_files():
+    files = os.listdir(app.config['UPLOAD_FOLDER'])
+    return jsonify(files)
+
+
+@app.route('/get_filepath', methods=['POST'])
+def get_filepath():
+    filename = request.json.get('filename')
+    filepath = "uploads/"+filename
+    print(filepath)
+    return jsonify(filepath=filepath)
 
 if __name__ == '__main__':
     app.run('127.0.0.1', port=8988, debug=True)
