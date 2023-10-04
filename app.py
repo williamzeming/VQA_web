@@ -8,7 +8,6 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__, static_folder="webroot")
 CORS(app)
 
-
 @app.route('/')
 # @app.route('/<path:path>')
 def index():
