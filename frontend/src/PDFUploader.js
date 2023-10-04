@@ -69,7 +69,7 @@ function PDFUploader() {
                 </form>
             </div>
             <div>
-                <Box sx={{width: '50%'}}
+                <Box sx={{width: '100%'}}
                      justifyContent="center"
                      alignItems="center"
                      flexDirection="column">

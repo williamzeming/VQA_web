@@ -30,15 +30,6 @@ function TransitionAlerts() {
           Close me!
         </Alert>
       </Collapse>
-      <Button
-        disabled={open}
-        variant="outlined"
-        onClick={() => {
-          setOpen(true);
-        }}
-      >
-        Re-open
-      </Button>
     </Box>
   );
 }
