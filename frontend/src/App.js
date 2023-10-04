@@ -67,7 +67,7 @@ function App() {
     };
 
     return (
-        <div >
+        <div style={{backgroundColor: 'aliceblue'}}>
             {/*<Container maxWidth='xl' style={{backgroundColor: 'aliceblue'}}>*/}
                 <h1 align='center'>VQA is Query Application!</h1>
                 <Grid container spacing={2}>
