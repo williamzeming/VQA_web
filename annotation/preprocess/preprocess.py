@@ -120,4 +120,3 @@ def preprocess(doc_path):
         # error_pages[todo_file] = str(e)
     # return error_pages
 
-preprocess('/Users/ruxiw/PycharmProjects/VQA_web/uploads/PDF-VQA.pdf')
