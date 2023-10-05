@@ -1,5 +1,5 @@
 import os
-
+from annotation.preprocess.preprocess import preprocess
 from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_uploads import UploadSet, configure_uploads, DOCUMENTS, patch_request_class
 from flask_cors import CORS
@@ -44,6 +44,7 @@ def upload():
 
 @app.route('/get_filelist', methods=['GET'])
 def get_files():
+    preprocess('./uploads/a071924_junction_south_ar2005-06_14474460.pdf')
     files = os.listdir(app.config['UPLOAD_FOLDER'])
     return jsonify(files)
 

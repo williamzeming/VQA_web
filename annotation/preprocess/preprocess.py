@@ -23,7 +23,9 @@ def pdftoimg(filepath, imgpath):
     """
     doc = fitz.open(filepath)
     i = 0
-    pdfname = filepath.split('.')[0].split('\\')[-1]
+    pdfname = os.path.basename(filepath).split('.')[0]
+    # pdfname = filepath.split('.')[0].split('/')[-1]
+    print(pdfname)
     for page in doc:
         i += 1
         pix = page.get_pixmap()
@@ -36,9 +38,9 @@ def preprocess(doc_path):
     Extract text line information from PDF.
     doc_path: path of pdf that need to preprocess
     """
-    img_textlines = './img_textline/'
-    img_with_bbox = './img_with_bbox/'
-    img_without_bbox = './img_with_bbox/'
+    img_textlines = './annotation/preprocess/img_textline/'
+    img_with_bbox = './annotation/preprocess/img_with_bbox/'
+    img_without_bbox = './annotation/preprocess/img_without_bbox/'
 
     count = 0
     # error_pages = {}
@@ -108,7 +110,7 @@ def preprocess(doc_path):
             img_file = img_with_bbox + file_name + '_page-' + str(page_num) + '.png'
             cv2.imwrite(img_file, img)
 
-            file_loc = img_textlines + file_name + "_page-" + str(page_num) + ".json"
+            file_loc = img_textlines + file_name + file_name + "_page-" + str(page_num) + ".json"
 
             with open(file_loc, 'w') as output:
                 json_str = json.dumps(json_file)
@@ -119,4 +121,3 @@ def preprocess(doc_path):
         print(f'The file {todo_file} cannot extract textline information. Please try another file.')
         # error_pages[todo_file] = str(e)
     # return error_pages
-
