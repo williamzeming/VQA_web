@@ -6,7 +6,7 @@ from pdfminer.converter import PDFPageAggregator
 from pdfminer.layout import LAParams, LTTextBox, LTFigure
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
-from tqdm import tqdm
+
 
 
 def get_bbox(sizeRatioW, sizeRatioH, pageW, pageH, bbox):
@@ -36,18 +36,21 @@ def pdftoimg(filepath, imgpath):
 def preprocess(doc_path):
     """
     Extract text line information from PDF.
-    doc_path: path of pdf that need to preprocess
+    doc_path: path of PDF that need to preprocess
     """
-    img_textlines = './annotation/preprocess/img_textline/'
-    img_with_bbox = './annotation/preprocess/img_with_bbox/'
-    img_without_bbox = './annotation/preprocess/img_without_bbox/'
-
-    count = 0
-    # error_pages = {}
-    count += 1
 
     todo_file = doc_path.split('/')[-1]
     file_name = todo_file[:-4]
+
+    img_textlines = './annotation/preprocess/img_textline/' + file_name + '/'
+    img_with_bbox = './annotation/preprocess/img_with_bbox/' + file_name + '/'
+    img_without_bbox = './annotation/preprocess/img_without_bbox/' + file_name + '/'
+    # Ensure directories exist
+    os.makedirs(img_textlines, exist_ok=True)
+    os.makedirs(img_with_bbox, exist_ok=True)
+    os.makedirs(img_without_bbox, exist_ok=True)
+
+    # Store images to img_without_bbox folder
     pdftoimg(doc_path, img_without_bbox)
 
     document = open(doc_path, 'rb')
@@ -60,7 +63,6 @@ def preprocess(doc_path):
     interpreter = PDFPageInterpreter(rsrcmgr, device)
     page_num = 0
 
-    # print("Now processing : ", count)
     try:
         for page in PDFPage.get_pages(document):
 
@@ -119,5 +121,4 @@ def preprocess(doc_path):
             page_num += 1
     except Exception as e:
         print(f'The file {todo_file} cannot extract textline information. Please try another file.')
-        # error_pages[todo_file] = str(e)
-    # return error_pages
+
