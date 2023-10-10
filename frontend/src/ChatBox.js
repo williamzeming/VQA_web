@@ -1,34 +1,111 @@
-import React, { useState } from 'react';
-import './ChatBox.css';
+import React, {useState} from 'react';
+import axios from 'axios';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import Chip from '@mui/material-next/Chip';
+import SendIcon from '@mui/icons-material/Send';
+import {TextField} from "@mui/material";
 
 function ChatBox() {
-  const [messages, setMessages] = useState([]);
-  const [inputValue, setInputValue] = useState('');
+    const recomdBtn = {
+        backgroundColor: '#1e82e0', /* Green */
+        border: 'none',
+        color: 'white',
+        padding: '10px 15px',
+        textAlign: 'center',
+        textDecoration: 'underline',
+        display: 'inline-block',
+        fontSize: '16px',
+        margin: '4px 6px',
+        transitionDuration: '0.4s',
+        cursor: 'pointer'
+    };
 
-  const handleSend = () => {
-    if (inputValue.trim()) {
-      setMessages([...messages, inputValue.trim()]);
-      setInputValue('');
-    }
-  };
+    const recommdMap = ['Hello', 'How are you?', 'Goodbye'];
 
-  return (
-    <div className="chatBox">
-      <div className="messages">
-        {messages.map((msg, index) => (
-          <div key={index} className="message">{msg}</div>
-        ))}
-      </div>
-      <div className="inputArea">
-        <input
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          placeholder="Type a message..."
-        />
-        <button onClick={handleSend}>Send</button>
-      </div>
-    </div>
-  );
+    const [message, setMessage] = useState('');
+    const [replies, setReplies] = useState([]);
+
+    const sendMessage = async () => {
+        try {
+            // Add user message to chat
+            setReplies(prev => [...prev, {type: 'user', message: message}]);
+
+            // Send the message to the server
+            const response = await axios.post('http://localhost:8988/chat', {message});
+
+            // Add bot reply to chat
+            setReplies(prev => [...prev, {type: 'bot', message: "Model: " + response.data.reply}]);
+
+            // Clear the input
+            setMessage('');
+        } catch (error) {
+            console.error("An error occurred while sending the message", error);
+        }
+    };
+
+    const sendPresetMessage = async (presetMessage) => {
+        setMessage(presetMessage);
+        // await sendMessage();
+    };
+
+
+    return (
+        <div style={{ margin: '0 auto'}}>
+            <div style={{border: '2px solid black', height: '750px', overflowY: 'scroll'}}>
+                {replies.map((reply, index) => (
+                    <div
+                        key={index}
+                        style={{
+                            display: 'flex',
+                            justifyContent: reply.type === 'bot' ? 'flex-start' : 'flex-end',
+                            marginBottom: '5px',
+                            marginLeft: '8px',
+                            marginRight: '8px'
+                        }}
+                    >
+                        <p
+                            style={{
+                                backgroundColor: reply.type === 'bot' ? '#e0f7fa' : '#c8e6c9',
+                                borderRadius: '5px',
+                                padding: '10px',
+                                marginBottom: '0'
+                            }}
+                        >
+                            {reply.message}
+                        </p>
+                    </div>
+                ))}
+            </div>
+            <div style={{marginTop: '10px'}}>
+                <Stack direction="row" spacing={2}>
+                    {recommdMap.map((msg, index) => (
+                        <Button
+                            key={index}
+                            variant="outlined"
+                            onClick={() => sendPresetMessage(msg)}
+                        >
+                            {msg}
+                        </Button>
+                    ))}
+                </Stack>
+            </div>
+            <div style={{marginTop: '10px'}}>
+                {/*<input*/}
+                {/*    type="text"*/}
+                {/*    value={message}*/}
+                {/*    onChange={(e) => setMessage(e.target.value)}*/}
+                {/*    style={{width: '80%', marginRight: '10px'}}*/}
+                {/*/>*/}
+                <TextField value={message} variant="standard" placeholder="Placeholder" size='medium'
+                           onChange={(e) => setMessage(e.target.value)}
+                           style={{width: '80%', marginRight: '10px'}}/>
+                <Button variant="contained" endIcon={<SendIcon/>} onClick={sendMessage}>
+                    Send
+                </Button>
+            </div>
+        </div>
+    );
 }
 
 export default ChatBox;

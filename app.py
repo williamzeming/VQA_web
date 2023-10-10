@@ -1,7 +1,7 @@
 import os
 from annotation.preprocess.preprocess import preprocess
 from flask import Flask, request, jsonify, render_template, send_from_directory
-from flask_uploads import UploadSet, configure_uploads, DOCUMENTS, patch_request_class
+# from flask_uploads import UploadSet, configure_uploads, DOCUMENTS, patch_request_class
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
@@ -60,6 +60,17 @@ def get_filepath():
 @app.route('/pdfs/<filename>', methods=['GET'])
 def serve_pdf(filename):
     return send_from_directory(directory='uploads', path=filename)
+
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    data = request.get_json()
+    message = data.get('message', '')
+    print(message)
+    response = {
+        'reply': 'Hello World'
+    }
+    return jsonify(response)
 
 
 if __name__ == '__main__':

@@ -2,7 +2,7 @@ import React from 'react';
 import {Input, Button, IconButton} from "@material-ui/core";
 import {makeStyles} from '@material-ui/core/styles';
 import AttachFileIcon from '@material-ui/icons/AttachFile';
-
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import Box from '@mui/material/Box';
 import Alert from '@mui/material/Alert';
 import Collapse from '@mui/material/Collapse';
@@ -65,7 +65,7 @@ function PDFUploader() {
                     </label>
                     <input type="file" accept="application/pdf" id="pdfInput" className={classes.input}
                            color="primary"/>
-                    <Button type="submit" variant="contained" color="primary">upload</Button>
+                    <Button type="submit" variant="contained" startIcon={<CloudUploadIcon />} color="primary">Upload file</Button>
                 </form>
             </div>
             <div>
