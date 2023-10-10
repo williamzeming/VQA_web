@@ -80,7 +80,7 @@ function ChatBox() {
                 <TextField value={message} variant="standard" placeholder="Ask a Question" size='medium'
                            onChange={(e) => setMessage(e.target.value)}
                            style={{width: '80%', marginRight: '10px'}}/>
-                <Button variant="contained" endIcon={<SendIcon/>} onClick={sendMessage}>
+                <Button variant="contained" endIcon={<SendIcon/>} onClick={sendMessage} style={{float: 'right'}}>
                     Send
                 </Button>
             </div>
