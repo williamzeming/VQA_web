@@ -57,8 +57,8 @@ function PDFUploader() {
 
     return (
         <div>
-            <h2>Upload your PDF</h2>
-            <div>
+            <div style={{textAlign:'center'}}>
+                <h2>Upload your PDF</h2>
                 <form onSubmit={handleUpload}>
                     <label htmlFor="pdfInput">
                         <Button aria-label="upload picture" variant="outlined" component="span" color="primary" className={classes.button}>Choose a PDF</Button>
