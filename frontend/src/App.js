@@ -73,10 +73,10 @@ function App() {
                 <h1 align='center'>VQA is Query Application!</h1>
                 <Grid container spacing={2}>
                     <Grid item xs={3} md={3}  lg={2} xl={1}>
-                        <Paper elevation={2} style={{backgroundColor: 'white'}} sx={{
-                            borderColor: 'black',
-                            borderWidth: 2,
-                            borderStyle: 'solid'
+                        <Paper elevation={5} style={{backgroundColor: 'white'}} sx={{
+                            borderColor: 'grey',
+                            borderWidth: 1,
+                            borderStyle: 'black'
                         }}>
                             <ListSubheader>Uploaded Files</ListSubheader>
                             <FixedSizeList height={750} itemSize={50} itemCount={files.length}>
@@ -86,7 +86,8 @@ function App() {
                     </Grid>
                     <Grid item xs={4} md={5} lg={5} xl={5}>
                         <div align='center'>
-                            <div className="App">
+                            <Paper elevation={5}>
+                                <div className="App">
                                 {pdfUrl ? (
                                     <iframe
                                         src={pdfUrl}
@@ -100,13 +101,17 @@ function App() {
                                     <p>Loading PDF...</p>
                                 )}
                             </div>
+                            </Paper>
+
                         </div>
                     </Grid>
                     <Grid item xs={3} md={4} lg={5} xl={6}>
-                        <div align='left'>
+                        <Paper elevation={5}>
+                            <div align='left'>
                             <ChatBox/>
                         </div>
-                        <br/>
+                        </Paper>
+
                     </Grid>
                 </Grid>
                 <div style={uploadButton}>

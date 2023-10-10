@@ -7,20 +7,6 @@ import SendIcon from '@mui/icons-material/Send';
 import {TextField} from "@mui/material";
 
 function ChatBox() {
-    const recomdBtn = {
-        backgroundColor: '#1e82e0', /* Green */
-        border: 'none',
-        color: 'white',
-        padding: '10px 15px',
-        textAlign: 'center',
-        textDecoration: 'underline',
-        display: 'inline-block',
-        fontSize: '16px',
-        margin: '4px 6px',
-        transitionDuration: '0.4s',
-        cursor: 'pointer'
-    };
-
     const recommdMap = ['Hello', 'How are you?', 'Goodbye'];
 
     const [message, setMessage] = useState('');
@@ -52,7 +38,7 @@ function ChatBox() {
 
     return (
         <div style={{ margin: '0 auto'}}>
-            <div style={{border: '2px solid black', height: '750px', overflowY: 'scroll'}}>
+            <div style={{borderBottom:'1px solid #1976d2', height: '690px', overflowY: 'scroll'}}>
                 {replies.map((reply, index) => (
                     <div
                         key={index}
@@ -77,7 +63,7 @@ function ChatBox() {
                     </div>
                 ))}
             </div>
-            <div style={{marginTop: '10px'}}>
+            <div style={{marginTop: '10px',paddingLeft:'20px'}}>
                 <Stack direction="row" spacing={2}>
                     {recommdMap.map((msg, index) => (
                         <Button
@@ -90,14 +76,8 @@ function ChatBox() {
                     ))}
                 </Stack>
             </div>
-            <div style={{marginTop: '10px'}}>
-                {/*<input*/}
-                {/*    type="text"*/}
-                {/*    value={message}*/}
-                {/*    onChange={(e) => setMessage(e.target.value)}*/}
-                {/*    style={{width: '80%', marginRight: '10px'}}*/}
-                {/*/>*/}
-                <TextField value={message} variant="standard" placeholder="Placeholder" size='medium'
+            <div style={{marginTop: '10px', padding: '10px'}}>
+                <TextField value={message} variant="standard" placeholder="Ask a Question" size='medium'
                            onChange={(e) => setMessage(e.target.value)}
                            style={{width: '80%', marginRight: '10px'}}/>
                 <Button variant="contained" endIcon={<SendIcon/>} onClick={sendMessage}>
