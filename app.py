@@ -1,13 +1,18 @@
 import os
+import random
 from annotation.preprocess.preprocess import preprocess
 from flask import Flask, request, jsonify, render_template, send_from_directory
 # from flask_uploads import UploadSet, configure_uploads, DOCUMENTS, patch_request_class
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
-
+from chatbot import ChatBot
 app = Flask(__name__, static_folder="webroot")
 CORS(app)
+cbot = ChatBot()
 
+with open('./annotation/test.txt', 'r', encoding='utf-8') as file:
+    testPDF = file.read()
+sessionId = str(random.randint(0,1000))
 @app.route('/')
 # @app.route('/<path:path>')
 def index():
@@ -44,7 +49,7 @@ def upload():
 
 @app.route('/get_filelist', methods=['GET'])
 def get_files():
-    preprocess('./uploads/a071924_junction_south_ar2005-06_14474460.pdf')
+    preprocess('./uploads/a109394_vegetation_report_2011-11-01.pdf')
     files = os.listdir(app.config['UPLOAD_FOLDER'])
     return jsonify(files)
 
@@ -59,6 +64,8 @@ def get_filepath():
 
 @app.route('/pdfs/<filename>', methods=['GET'])
 def serve_pdf(filename):
+    reply = cbot.send_initial_message(testPDF)
+    print(reply)
     return send_from_directory(directory='uploads', path=filename)
 
 
@@ -67,8 +74,9 @@ def chat():
     data = request.get_json()
     message = data.get('message', '')
     print(message)
+    reply = cbot.chat(message)
     response = {
-        'reply': 'Hello World'
+        'reply': reply
     }
     return jsonify(response)
 
