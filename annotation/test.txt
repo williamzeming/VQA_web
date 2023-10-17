@@ -1,22 +1,4 @@
-Aircore Drilling
-The reconnaissance aircore drilling program was designed to test the lithologies of
-interpreted felsic volcanic sequence in E45/2381 for the suitability for VMS host
-rocks. The holes were drilled alongside existing roads that crossed the interpreted
-felsic volcanic package within the relinquished portion of E45/2381. A total of 29
-holes were drilled for 1126m and 260 composite samples were collected.
-The tenement has an unconsolidated cover of silt, sand, gravel and cobbles,
-overlying the basement lithologies, varying in thickness from 3m in the southern
-portion of the tenement, increasing towards the north up to 56m. The basement
-lithologies intersected were felsic volcanics and associated high level porphyry
-intrusives, and minor epiclastic to volcaniclastic sediments.
-Spacing between drill holes was initially 500m and some infill holes were completed
-down to 125m spacing. Large composite samples were collected for the cover (10m)
-and basement samples were taken as 4m composites. The palaeosol
-(cover/basement interface) was sampled as a 1m to 2m interval sample.
-Several holes intersected anomalous basement lithologies particularly GTA005 and
-GTA008. GTA005 and GTA008 had results of 1200 ppm Zn, 382 ppm Pb in an
-epiclastic/volcaniclastic basement and 1970 ppm Zn within the hematite altered
-rhyolite (?) basement respectively.
-These results are quite significant, as the aim of the drilling was to confirm the extent
-of the felsic volcanic package, and to return samples that are anomalous in base
-metals indicates the presence of these metals in the felsic volcanic package.
+{section: Intro, page_no: 2,
+content: This is the first partial surrender report submitted for tenement E28/1187 which was granted on 11/5/2005.  \n E28/1187 is part of the Kalpini Project; originally acquired by Heron Resources Ltd (Heron) because it was \n considered to be prospective for gold and nickel on the basis of the project area’s proximity to the Emu Fault \n Zone, the Kalpini and Wellington gold mining centres, and the occurrence of a komatiite belt in the eastern \n prospect area.  \nThe Kalpini Project is incorporated within Heron’s larger Kalgoorlie Nickel Project (KNP) which is subject to a \n farm-in agreement with Inco Australia Limited Partnership (IALP).   \nDuring the period 1997-2004, three major campaigns of RC drilling, preliminary metallurgical testwork and a \n resource estimate were completed on the Project by Heron. During the 2004 – 2005 reporting period the Ni \n laterite  resource  was  recalculated  by  Snowdens  Consultants  who  used  using  block  modelling  techniques \n and a bottom Ni cut-off grade of 0.5% to estimate the total Mineral Resource at Kalpini at 76.4Mt grading \n 0.73% Ni and 0.044% Co (Snowdens, 2004).   \nWork  completed  on  the  portion  of  E28/1187  that  has  been  surrendered  focussed  on  nickel  laterite  and \n included field reconnaissance, data compilation, a review of regional geology and the acquisition and review \n of regional multiclient aeromagnetic data as part of a review of the Kalpini Project as a whole. This report \n details these works. \n'}
+{section: SUMMARY, page_no: 4,
+content: "This report summarises the work undertaken by Haoma Mining NL on the\n North Shaw Project - E45/2189 tenement.\nExploration and other activities were carried out under the supervision of, or\n directly by, Mr Peter Cole (General Manager Operations, Bamboo Creek).\nThe E45/2189 tenement is situated approximately 45 kilometres wet of Marble\n group of tenements held by Haoma Mining NL, which covers ground from the\n It is one of a\n Bar and 20 kilometres south of the North Pole Mining Centre.\n Daltons-Giralia Joint Venture area through the North Shaw gold project and\n then northward to the Normay and Mickey's Find Projects.\nThe tenement comprises 70 graticular blocks and covers about 20 kilometres\n of mainly east striking Archaean and Proterozoic rocks.\nExploration Australia Ltd after which time the tenement was acquired under\n the tenement up to 2002 was managed by De Beers\n Exploration of\n the joint venture terms between Haoma Mining and De Beers Exploration.\nHaoma Mining NL. Tenement details are given in Table 1, and tenement\n tenement E45/2189 is owned and operated by\n The North Shaw Project -\n locations are shown on Figure 1.}

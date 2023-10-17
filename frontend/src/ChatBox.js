@@ -20,9 +20,14 @@ function ChatBox() {
             // Send the message to the server
             const response = await axios.post('http://localhost:8988/chat', {message});
 
+            // Split the received response into main message and metadata
+            // Extract main message and metadata from the response
+            const [mainMessage, metaData] = response.data.reply.split("##");
+            console.log("Main Message:", mainMessage);
+            console.log("Metadata:", metaData);
             // Add bot reply to chat
-            setReplies(prev => [...prev, {type: 'bot', message: "Model: " + response.data.reply}]);
-
+            // setReplies(prev => [...prev, {type: 'bot', message: "Model: " + response.data.reply}]);
+            setReplies(prev => [...prev, {type: 'bot', message: mainMessage, metaData: metaData}]);
             // Clear the input
             setMessage('');
         } catch (error) {
@@ -51,15 +56,21 @@ function ChatBox() {
                         }}
                     >
                         <p
-                            style={{
-                                backgroundColor: reply.type === 'bot' ? '#e0f7fa' : '#c8e6c9',
-                                borderRadius: '5px',
-                                padding: '10px',
-                                marginBottom: '0'
-                            }}
-                        >
-                            {reply.message}
-                        </p>
+                        style={{
+                            backgroundColor: reply.type === 'bot' ? '#e0f7fa' : '#c8e6c9',
+                            borderRadius: '5px',
+                            padding: '10px',
+                            marginBottom: '0'
+                        }}
+                    >
+                        {reply.message}
+                        {reply.metaData &&
+                            <span style={{ fontStyle: 'italic', marginLeft: '5px',fontSize: 14}}>
+                                <br />
+                                {reply.metaData}
+                            </span>
+                        }
+                    </p>
                     </div>
                 ))}
             </div>

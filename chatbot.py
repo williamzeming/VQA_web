@@ -1,3 +1,5 @@
+import re
+
 import openai
 import json
 
@@ -12,10 +14,10 @@ class ChatBot:
 
     def send_initial_message(self, initial_message_text):
         self.messages = []
-        rule = "You are a helpful assistant. Follow these steps to answer the user queries. Step 1 - First  to find the relevant content in this " \
-               "text. Enclose all your work for this step within triple quotes (\"\"\"). Step 2 - summarize, " \
-               "and then return short responses. Enclose all your work for this step within triple quotes (\"\"\"). " \
-               "This text extracted from Mineral report pdf. "
+        rule = "You are a helpful assistant. Follow these steps to answer the user queries. Step 1 - First to find the relevant content in this \
+               text. Enclose all your work for this step within triple quotes (\"\"\"). \
+               Must locate the Page Number and section everytime, Format as \"##Sources: [Page number: page_no,Section:sectionName]##\", hash key mark is necessary, add this in the answer end. \
+               This text extracted from Mineral report pdf. "
         initial_message = {"role": "system", "content": rule + initial_message_text}
         self.messages.append(initial_message)
         # Make the API request for initial message
@@ -37,21 +39,21 @@ class ChatBot:
         # Make the API request
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
-            messages=self.messages
+            messages=self.messages,
+            temperature=0.8
         )
 
         # Extract and return the model's answer
-        answer = response['choices'][0]['message']['content']
-        return answer
+        text = response['choices'][0]['message']['content']
+        try:
+            pattern = re.compile(r'Sources: (\[.*?\])')
+            # Extracting "Sources:" content
+            source_content = re.findall(pattern, text)[0]
+            # Getting content outside the "Sources:" pattern
+            remaining_content = re.split(pattern, text)[0].strip()
+            result = remaining_content + "Sources: " + source_content
+        except Exception as e:
+            return text
+        print(text)
+        return result
 
-# chat_obj = ChatBot()
-#
-# # Send the initial message
-# chat_obj.send_initial_message("Your initial message text here.")
-#
-# # Chat with the API
-# response = chat_obj.chat("Your question text here.", "user-123")
-# print(f'Assistant: {response}')
-
-# cbot = ChatBot()
-# cbot.send_initial_message("hi,I am William", 12)
