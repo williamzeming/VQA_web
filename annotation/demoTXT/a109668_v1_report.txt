@@ -1,0 +1,103 @@
+{section: 1. Introduction, page_no: 4, 
+content: This report is the final surrender report for E08/2679.
+ E08/2679 neighbours a reporting group also under the ownership of Anthony Warren Slater (‘AWS’) which has had extensive works and
+ exploration programmes carried out within its extent. AWS used this knowledge to qualitatively take advantage of surrounding available
+ leases in an effort to further exploit the regions resources. E08/2679 was regarded as prospective for water and for road and construction
+ materials.
+It was interpreted that the dune sand materials present within the lease and its surrounds, were capable of being used for fill sand and some
+ fine concrete sand. It appeared from the desktop studies and mineralogy of the region, that the dune sand material may make a suitable
+ material for these purposes.
+Furthermore, surrounding historic hydrological data also lent to the assumption that the lease could be a source of water.
+ During the life of the tenement, field trips were made to site to assess access issues associated with the difficult tenement topography and to
+ assess existing borrow pits on the tenement.
+It was determined after qualitative analysis that the areas of interest within E08/2679 were of no prospective significance to AWS, and have
+ subsequently been surrendered.
+}
+
+{section: 2. Location and Access Details, page_no: 5, 
+content: The project lease is located ~36 km south of Onslow with access via the main Onslow Rd. There is a small amount of internal tenement
+ access on station style tracks however due to the fluvatile and lacustrine nature of the tenements, internal access around the tenements is
+ restricted.
+E08/2679 is a single-Block Exploration lease which previously held historic prospecting with private and other government agencies. The
+ lease was held in the name of Anthony Warren Slater (‘AWS’) and operated under the same name.
+ E08/2679 is contained entirely within ex-Mount Minnie Pastoral Lease (3114/862) and encroaches upon multiple other land types i.e. FNA’s
+ and road reserves.
+The Onslow Highway Project occurs in an uninhabited area. The closest occupied homestead is Minderoo Station Homestead, occurring
+ approximately 23km west of E08/2679. Onslow Townsite with a population of approximately 850 people (2002 census) occurs approximately
+ 36km to the north-northwest of the Onslow Highway Project.
+ Figures 1 and 2 below detail the location of the tenements on cadastral and aerial photography bases.
+}
+
+{section: 3. Tenement Details, page_no: 6, 
+content: As is provided automatically during the generation of this report, the Onslow Highway Project consists of a single tenement. Again as
+ aforementioned, this is a Final Surrender Report for E08/2679.
+As can be seen in Figure 2, the lease can be characterised as a single block tenement, which holds a visually perfect-square appearance.
+ Due to the relatively short life of the lease, yearly expenditure reports have not been generated for E08/2679.
+The project is currently held by AWS, full details are as follows;
+}
+
+{section: 4.1 Regional Geology, page_no: 7, 
+content: The regional area in which the Project is located is dominated by ancient granitoid batholiths, elliptical to circular in plan and formed by
+ repeated magmatic intrusions. It is the weathered remnants of these batholiths that form the granitic domes landscapes.
+The Project area more broadly straddles the boundary of the Ashburton and Hamersley Basins of the Pilbara Craton. The Carnarvon Basin
+ predominantly comprises lithologies of the early Cretaceous, Winning Group. The Basin is dominated by Radiolarite; chert; and glauconitic
+ sandstone; mapped as undivided Windalia Radiolarite/Birdrong Sandstone.
+The Tabba Tabba Shear Zone is the major division between the East and West Pilbara craton. The Tabba Tabba Shear Zone is a granodioritic
+ suite that forms the eastern boundary fault of the Mallina Basin.
+The granite - greenstone sequence is characterised by the presence of a series of large layered mafic - ultramafic intrusions. The Fortescue
+ Group is the lowest group in the Mount Bruce Supergroup of the Precambrian Hamersley Basin and is a generally un-metamorphosed and
+ largely undeformed sequence. No significant mineral occurrences have been recorded with the Fortescue Group rocks.
+}
+
+{section: 4.2 Local Geology, page_no: 7, 
+content: The geology of the project area was assessed using the Geological Survey of Western Australia‘s 1:500,000 interpreted bedrock geology
+ spatial dataset (GSWA 2009). The Onslow Highway Project Area is part of the Winning Group, described by GSWA (2009) as:
+ “Undivided: shale, siltstone, marl, and basal sandstone; commonly glauconitic” (GSWA 2009).
+The resource area consists of red Quaternary aeolian dunes with an typical height above surrounding land being in the order of 7.5m in
+ height and even as high as 10m in some areas. The dunes appear to trend approximately northwest-southeast and frequently becoming
+ reticulate. Swales, are moderately narrow and sometimes with minor areas of clay pans, swamps and sump depressions. Typically, crests are
+ hummocky and uneven with gently to moderately inclined slopes, steepest on western sides.
+}
+
+{section: 5. Previous Exploration, page_no: 8, 
+content: As has been mentioned earlier within this report, due to the age of the tenement, no previous annual reports or exploration were carried out
+ by AWS.
+ It should be mentioned however, that the tenement was host to various combinations of either historic borrow pits or licensed water bores.
+}
+
+{section: 6. Current Exploration, page_no: 9, 
+content: Work carried out within the reporting period has been varied and includes desktop and investigative studies for hydrogeological work finding
+ suitable groundwater sources (from DOW bore data). The work also includes multiple site visits by the operator to complete ‘fire breaks’, site
+ maintenance (pegs, etc.) and consultation with surrounding landowners.
+The site visit conducted also included the assessment of access to the tenement and to make high level appraisals as to the suitability of the
+ nature, distribution and quality of the materials within the lease, for local construction purposes and to site possible locations for test water
+ bores to test the groundwater potential of the tenure.
+}
+
+{section: 7.1 Data Review, page_no: 10, 
+content: Works carried out have largely been desktop and investigative studies, for both construction materials (sand, gravel, aggregate) and ground
+ water. Currently finding suitable groundwater sources (from DOW bore data) nearby suitable virgin and existing resource locations. A site
+ visit was conducted to assess access through the tenement and to make high level appraisals as to the suitability of the nature, distribution
+ and quality of the materials in the existing borrow pits for local construction purposes and to site possible locations for test water bores to
+ test the groundwater potential of the tenure.
+}
+
+{section: 7.2 Other Activities, page_no: 10, 
+content: AWS conducted site inspections within E08/2679, however has not undertaken any geological reconnaissance or bulk sampling during the
+ reporting year.
+ It was determined from qualitative site analysis that the materials present from within historic quarries was not of importance and not suitable
+ to AWS’ business plan or model.
+}
+
+{section: 8. Conclusion and Recommendations, page_no: 11, 
+content: The geological desktop studies, reconnaissance surveys and market assessments indicate that the potential resource within E08/2679 was not
+ viable, of strategic importance or suitable to AWS’ business plan / model.
+ It is for this reason that AWS no longer has an interest in E08/2679 and has subsequently surrendered the lease.
+}
+
+{section: 10. Expenditure Summary, page_no: 13, 
+content: Due to surrender dates, no expenditure reports were submitted for this lease, however AWS confidently estimates that expenditure over
+ E08/2679 from the data review and geological reconnaissance works was in excess of $8,400.
+ A costs breakdown can be provided upon request if necessary.
+}
+

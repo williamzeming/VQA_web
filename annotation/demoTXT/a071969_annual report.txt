@@ -1,0 +1,146 @@
+{section: SUMMARY, page_no: 1, 
+content: Newmont did not provide an exploration budget for calendar year 2005.  Instead, some funds 
+ were made available to test the gold potential at three locations along the western limit of the 
+ tenement holding.  This resulted in the completion of six shallow diamond drill holes into 
+ massive and stringer pyrite-pyrrhotite and graphitic shales; no gold anomalies were recorded.  
+ No base metal exploration was undertaken. 
+}
+
+{section: 1  INTRODUCTION, page_no: 4, 
+content: This report documents the calendar year 2005 exploration programmes undertaken by 
+ Newmont Golden Grove Operations Pty Ltd and Oxiana Golden Grove Pty Ltd on the Golden 
+ Grove Project.  Mining Lease M59/543 (Walgardy) is included in the Golden Grove Project. 
+Shallow diamond drilling was undertaken to test the potential for gold deposits within the so-
+ called “Banded Iron” sequence to the west of Gossan Hill and Scuddles.  No funding was made 
+ available for base metal exploration in calendar 2005. 
+}
+
+{section: 1.1  Location and Access, page_no: 4, 
+content: The Golden Grove Project is located in the southern Murchison region of Western Australia 
+ approximately 55 kilometres south south-east of the township of Yalgoo and approximately 225 
+ kilometres east of the Port of Geraldton.  The tenements are located alongside, and largely to 
+ the west of the Yalgoo to Paynes Find road.  Access within the property is provided by gravel 
+ tracks, fence lines and cleared grid lines.  An all weather airstrip services the Project. 
+}
+
+{section: 1.2  Tenements, page_no: 4, 
+content: Mining and prospecting leases, which comprise the Project area and are the subject of this 
+ report, are shown in Table 1 and Figure 1.  Surveys of lease boundaries were completed in April 
+ 2005 resulting in some changes to tenement areas. 
+An application was made to the Department of Minerals and Energy in September 1997 to 
+ convert prospecting leases P59/1217, 1218, 1219 and 1220 to a mining lease (MLA59/480).  
+ M59/03 (Scuddles) was renewed for a further 21 years. 
+}
+
+{section: 2  REGIONAL GEOLOGY, page_no: 6, 
+content: The Golden Grove Project lies on the eastern side of a central synclinal axis within the 
+ Warriedar Fold Belt (WFB).  The WFB is dominated by mafic volcanic successions and lies in 
+ the Yalgoo-Mt Singleton Greenstone Belt of the Murchison Province within the Yilgarn Craton, 
+ Western Australia.  The host sequence to the Scuddles and Gossan Hill base metals deposits is 
+ the Golden Grove formation of the Gossan Hill Group (Clifford, 1992) which, in general, youngs 
+ and dips westerly between 75o and 80o (Figure 2).  It comprises a foot wall sequence of rhyolitic 
+ flows and tuffs, a host sequence of volcaniclastic litharenites and crystal tuffs and a hanging 
+ wall sequence of felsic lavas.  Figure 3 provides a schematic stratigraphic column representing 
+ the Golden Grove formation and its enclosing units.  The Gossan Hill Group is overlain by the 
+ predominately mafic successions of the Thundelarra Group (Watkins and Hickman, 1990). 
+The Gossan Hill and Thundelarra Groups are overlain, either unconformably or structurally, by 
+ BIF and chert of the Windaning Group (Baxter, 1982b,c; Frater, 1978, 1983a, as cited in 
+ Clifford, 1992).  The BIF and chert form the prominent hills of the Minjar Range.  On the western 
+ flank of the range, sandstone and conglomerate of the Warriedar Formation crop out.  Siltstones 
+ and shales of the Mougooderra Formation overlie the Warriedar Formation. 
+Two major regional structures, the Mougooderra and Chulaar Shears, pass through and west of 
+ the leases.  These structures have been interpreted as strike slip faults and more recently as 
+ thrust faults. 
+The WFB is bounded to the east, west and south-east by the pre–syntectonic Murchison 
+ Monzogranite.  Post-tectonic granitoids intrude the margin of the greenstone belt post-dating 
+ regional folding events.  Mafic intrusives are common throughout the belt and are thought to be 
+ generally contemporaneous with overlying mafic successions. 
+}
+
+{section: 3  GEOCHEMISTRY, page_no: 9, 
+content: An outline of the analytical techniques and elemental suites for the various drilling programmes 
+ is presented below.  Available assay data are presented in Appendix 1. 
+}
+
+{section: 3.1  Diamond Drill Core Sampling, page_no: 9, 
+content: In areas of sulphide mineralisation or strong alteration, samples of half core were taken over 
+ nominal one metre intervals defined by lithological or alteration boundaries. 
+}
+
+{section: 3.2  Rotary Air Blast (RAB) Chip Sampling, page_no: 9, 
+content: While no RAB drilling was undertaken in calendar 2005, assays for several holes completed in 
+ 2004 and not previously reported are provided in Appendix 1.  One metre samples were 
+ collected from a cyclone and placed in rows on the ground.  Using a PVC “spear” composite 
+ samples were collected over five metre intervals and submitted for assay. 
+}
+
+{section: 3.4  Analytical Techniques, page_no: 9, 
+content: All routine exploration diamond core samples were sent to ALS-Chemex in Perth.  Each sample 
+ was pulverised totally and assayed for the listed elements by the following techniques (detection 
+ limits in brackets): 
+Selected diamond core holes were sampled to provide information on the effects of 
+ hydrothermal alteration.  These samples were sent to UltraTrace in Perth.  Each sample was 
+ pulverised totally and assayed for the listed elements by the following techniques (detection 
+ limits in brackets): 
+All RAB samples were sent to ALS-Chemex in Perth.  Each sample was pulverised totally and 
+ assayed for the listed elements by the following techniques (detection limits in brackets): 
+}
+
+{section: 4.1  Diamond Drilling, page_no: 10, 
+content: Diamond drilling programmes from surface and underground resulted in the completion of 
+ 2,297.5m in 10 holes.  The diamond drilling is summarised in Table 2.  Diamond drill hole 
+ locations are shown on Figure 6.  Summaries of the diamond drilling on a tenement by 
+ tenement basis are provided in Section 7.  Diamond drilling data, including those not available 
+ for the 2004 Annual Report, are presented in Appendix 1. 
+MossLake Drilling Services Pty Ltd continued the BJDD-series surface diamond drilling 
+ programme.  The drilling was undertaken with a UDR 1000 rig providing PQ, HQ and NQ2 core.  
+ Pre-collars were drilled mainly with PQ triple tube core to maintain dip and azimuth.  Down-hole 
+ survey control was provided by an Eastman-type single shot camera at nominal 30m intervals; 
+ selected holes were re-surveyed using a gyroscopic survey tool. 
+Boart Longyear undertook the S04-series underground exploration drilling at Scuddles using an 
+ LM75 rig.  Down-hole survey control was provided by an Eastman-type single shot camera at 
+ nominal 30m intervals. 
+Final drill collar locations, dips and azimuths (with respect to the Mine Grid) for all holes were 
+ provided by the on-site surveyors. 
+**       Abandoned due to bogged rods 
+}
+
+{section: 5  ENVIRONMENT AND REHABILITATION, page_no: 12, 
+content: Work completed on the Golden Grove Project included site preparation for diamond drilling and 
+ site clean-up on completion of drilling. 
+Some historical and recent drill collars were checked during the year to ensure that collar caps 
+ remained sound and that erosion around the collars did not occur. 
+There were no reportable environmental incidents during 2005. 
+}
+
+{section: 6  REPORT BY TENEMENT, page_no: 13, 
+content: Only specific exploration activities within the respective tenements are detailed below.  With the 
+ exception of the drilling discussed below, exploration-related activities centred around the 
+ setting up of lithogeochemical assessments of available diamond drilling. 
+}
+
+{section: 6.1.1  Diamond Drilling, page_no: 13, 
+content: Underground hole S04/103 was completed at 219.3m after being at 86.5m at the end of 
+ calendar 2004.  This hole was part of a short programme to test the base metal potential of the 
+ lower part of the volcanic sequence at Scuddles.  No sulphides or major hydrothermal alteration 
+ were intersected.  The locations and details of underground exploration holes S04/100 to 
+ S04/102 completed very late in December 2004 are also provided with this report. 
+Assay, survey, geological, geochemical and location data are provided in Appendix 1. 
+}
+
+{section: 6.2.1  Diamond Drilling, page_no: 13, 
+content: This tenement is located to the immediate west of the Gossan Hill mine.  Diamond drill holes 
+ BJDD006, BJDD007, BJDD008 and BJDD009 were completed for a total of 944m (refer Figures 
+ 4 and 5).  Hole BJDD007 was abandoned after the rods were irretrievably bogged.  No 
+ anomalous gold values were recorded in any of the holes despite the presence of pyrite with 
+ minor pyrrhotite. 
+Assay, survey, geological, geochemical and location data are provided in Appendix 1. 
+}
+
+{section: 6.3.1  Diamond Drilling, page_no: 13, 
+content: This tenement is located to the west of the Scuddles mine.  Diamond drill holes BJDD04 and 
+ BJDD005 were completed for a total of 481m (refer Figures 4 and 5).  Vein-style pyrite 
+ accumulations were intersected but no anomalous gold values were recorded. 
+Assay, survey, geological, geochemical and location data are provided in Appendix 1. 
+}
+

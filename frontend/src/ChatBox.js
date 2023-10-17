@@ -22,12 +22,12 @@ function ChatBox() {
 
             // Split the received response into main message and metadata
             // Extract main message and metadata from the response
-            const [mainMessage, metaData] = response.data.reply.split("##");
-            console.log("Main Message:", mainMessage);
-            console.log("Metadata:", metaData);
+            // const [mainMessage, metaData] = response.data.reply.split("##");
+            // console.log("Main Message:", mainMessage);
+            // console.log("Metadata:", metaData);
             // Add bot reply to chat
             // setReplies(prev => [...prev, {type: 'bot', message: "Model: " + response.data.reply}]);
-            setReplies(prev => [...prev, {type: 'bot', message: mainMessage, metaData: metaData}]);
+            setReplies(prev => [...prev, {type: 'bot', message: response.data.reply, metaData: response.data.source}]);
             // Clear the input
             setMessage('');
         } catch (error) {

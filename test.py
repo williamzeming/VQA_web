@@ -1,7 +1,6 @@
 import re
 
-text = "The Inferred Mineral Resource of the Kalpini Project is estimated to be 76.4 million tonnes grading 0.73% Ni and 0.044% Co at a 0.5% Ni bottom cut-off grade. ##Sources: [Page number: 3, Section: EXECUTIVE SUMMARY]##"
-
+text = "The project lease was owned by Anthony Warren Slater (‘AWS’). [Sources: Page number: 4, Section: 1. Introduction]"
 
 pattern = re.compile(r'Sources: (\[.*?\])')
 # Extracting "Sources:" content

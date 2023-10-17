@@ -10,9 +10,8 @@ app = Flask(__name__, static_folder="webroot")
 CORS(app)
 cbot = ChatBot()
 
-with open('./annotation/test.txt', 'r', encoding='utf-8') as file:
-    testPDF = file.read()
-sessionId = str(random.randint(0,1000))
+
+
 @app.route('/')
 # @app.route('/<path:path>')
 def index():
@@ -49,7 +48,6 @@ def upload():
 
 @app.route('/get_filelist', methods=['GET'])
 def get_files():
-    preprocess('./uploads/a109394_vegetation_report_2011-11-01.pdf')
     files = os.listdir(app.config['UPLOAD_FOLDER'])
     return jsonify(files)
 
@@ -61,11 +59,19 @@ def get_filepath():
     print(filepath)
     return jsonify(filepath=filepath)
 
+def loadtxt(file_name):
+    folder_path = './annotation/demoTXT'
+    base_name, ext = os.path.splitext(file_name)
+    new_filename = base_name + ".txt"
+    full_path = os.path.join(folder_path, new_filename)
+    with open(full_path, 'r', encoding='utf-8') as file:
+        testPDF = file.read()
+    return testPDF
 
 @app.route('/pdfs/<filename>', methods=['GET'])
 def serve_pdf(filename):
-    reply = cbot.send_initial_message(testPDF)
-    print(reply)
+    txt = loadtxt(filename)
+    cbot.send_initial_message(txt)
     return send_from_directory(directory='uploads', path=filename)
 
 
@@ -74,10 +80,13 @@ def chat():
     data = request.get_json()
     message = data.get('message', '')
     print(message)
-    reply = cbot.chat(message)
+    reply = cbot.chat(message + "Don't give me the source yet")
+    source = cbot.chat("find the last answer's source. Enclose all your work for this step within triple quotes (\"\"\")., strictly write as format \'Sources: [Page number: page_no, Section: sectionName]\' , do not write another things in this question!")
     response = {
-        'reply': reply
+        'reply': reply,
+        'source':source
     }
+    print(response)
     return jsonify(response)
 
 

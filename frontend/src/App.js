@@ -78,6 +78,7 @@ function App() {
                             borderStyle: 'black'
                         }}>
                             <ListSubheader>Uploaded Files</ListSubheader>
+                            <br />
                             <FixedSizeList height={750} itemSize={50} itemCount={files.length}>
                                 {renderRow}
                             </FixedSizeList>

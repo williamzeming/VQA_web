@@ -1,0 +1,188 @@
+{section: Executive Summary, page_no: 4, 
+content: The  Munni  Munni  Intrusive  Complex  (MMIC)  is  an  Archean  layered  mafic  –  ultramafic 
+ intrusive located in the West Pilbara region of Western Australia, approximately 45kms south 
+ of the township of Karratha. 
+Hunter Resources Ltd recognised the potential of the MMIC to host PGE mineralisation during 
+ the mid 1980’s and began a four year exploration program. During this time they identified a 
+ specific sulphide zone proximal to the contact between the mafic and ultramafic sequences 
+ which was subsequently named the Ferguson Reef after Dr. John Ferguson. 
+Work on the project was stalled during the early 1990’s due primarily to low PGE prices and 
+ later due to plaints lodged against Hunter Resources Ltd in the Wardens Court. 
+Late  in  2000  Helix  Resources  resolved  the  plaints  and  obtained  100%  ownership  of  the 
+ tenements  and  exploration  and  development  work  was  accelerated  to  take  advantage  of 
+ elevated PGE and particularly palladium prices. 
+A program of re-assessment of Hunter Resources data including the re-assay of mineralised 
+ intercepts  was  completed  late  in  2000.  An  aggressive  program  of  diamond  and  RC  drilling 
+ followed, extending the known mineralisation to 700m below surface in the Central Zone with 
+ preliminary exploration commenced in areas peripheral to the Central Zone.  
+In May 2002 Lonmin PLC entered into a joint venture on the Munni Munni Project where they 
+ could earn 50% equity in the project by funding all exploration through top the completion of a 
+ feasibility study. 
+In March 2003 Lonmin PLC withdrew from the project following ‘in house’ financial analysis 
+ which indicated that the project was sub economic. 
+As a result of the extensive drilling programs completed during the Lonmin JV period a JORC 
+ compliant PGM resource was estimated at Munni Munni (23.6mt at 2.9g/t PGM + 0.15% Cu 
+ + 0.09% Ni). Economic evaluations in November 2002 showed that at the then current metal 
+ prices  the  project  was  sub  economic.  During  the  current  period  there  have  been  some 
+ substantial changes in both metal prices and AUD$ exchange rate but the net effect has been 
+ that there has only been a minor increase in the basket price for the metal prices within the 
+ resource and it still remains subeconomic.  
+During July 2003 Helix signed a joint venture agreement with De Beers Australia Exploration 
+ Limited covering 11 exploration licences and applications surrounding the Munni Munni PGE 
+ project.  The  Joint  Venture  excludes  the  Mining  Leases  covering  the  Munni  Munni  PGM 
+ resources. 
+Field work over the areas being surrendered consists entirely of De Beers regional diamond 
+ sampling program. Helix has assayed these sampling for precious and base metals. 
+}
+
+{section: 1.1  Tenure, page_no: 5, 
+content: The areas being surrendered are from the following granted exploration licences (E47/1074, 
+ 1075 and 905). 
+This ground holding covers the region surrounding the Munni Munni Intrusive Complex Figure 
+ 1  summarises  Helix  Resources  Ltd  ground  holding  over  the  MMIC  and  the  area  being 
+ surrendered. Table 1 outlines relevant details: 
+In  July  2003  Helix  signed  a  joint  venture  agreement  with  De  Beers  Australia  Exploration 
+ Limited covering 11 exploration licences and applications surrounding the Munni Munni PGE 
+ project.  The  Joint  Venture  excludes  the  Mining  Leases  covering  the  Munni  Munni  PGM 
+ resources. The exploration licences include E47/1015, E47/1074-75, E471090, E47/1144-46, 
+ E47/1169-71 & E47/0905. 
+Under the Joint Venture, De Beers has the right to earn 51% in any new diamond discoveries 
+ by  spending  $3  million  on  exploration  within  the  next  three  years.  Helix  will  then  have  the 
+ option to participate in further exploration or development by contributing on a pro rata basis, 
+ 49%, or further diluting to a minimum interest of 25%. 
+}
+
+{section: 1.2  Location and Access, page_no: 5, 
+content: The area lies 45km directly south of the township of Karratha in the Western Pilbara Region 
+ of Western Australia, a location map is included as Figure 2. 
+}
+
+{section: 1.2  Location and Access, page_no: 6, 
+content: Karratha  is  approximately  1600km  north  of  Perth,  and  has  a  present  population  of  around 
+11,000 people. Large resource companies such as Woodside Petroleum, Hamersley Iron and 
+Dampier Salt utilise the infrastructure in Karratha and the port facilities at nearby Dampier on 
+Access to the project area is via the Hamersley Iron (HI) rail access road travelling south off 
+the  North  West  Coastal  Highway  for  approximately  35kms  and  then  turning  east  onto  the 
+Whundoo Pit Road for approximately 16kms.  
+The  area  is  transacted  by  station  tracks  in  various  states  of  disuse,  some  being  only 
+navigable in dry weather. 
+}
+
+{section: 1.3  Physiography and Climate, page_no: 8, 
+content: The West Pilbara JV Project area consists of several different terrains, ranging from low rocky 
+ spinifex and eucalypt covered hills to acacia and grass covered alluvial flats. 
+Although ephemeral themselves, most of the larger creek systems contain semi-permanent 
+ waterholes.  Vegetation  along  the  creek  systems  comprises  several  different  species  of 
+ eucalypt, acacia, tea-tree and herbaceous plants. 
+The climate is sub-tropical with rainfall of between 350 – 500mm per year, falling mostly in the 
+ summer  months  and  up  until  April.  The  temperature  ranges  from  22  -  25°  during  the  dry 
+ winter  months  to  45°  in  the  humid  summer.  The  area  is  frequently  effected  by  tropical 
+ cyclones in the November to April cyclone season. 
+Access during the wet season is by 4WD vehicle only and the area can be subject to flash 
+ flooding. The high summer rainfall often seriously denudes tracks particularly in areas of high 
+ run off. 
+}
+
+{section: 2.1  Regional Geology, page_no: 8, 
+content: The West Pilbara JV Project area is situated within the 61,000km2 Archaean Pilbara Block of 
+ the  Pilbara  Craton.  The  East  Pilbara  Block  consists  of  a  series  of  E-W  trending  granite  – 
+ greenstone  terranes  consisting  of  domal  granitic  batholiths  separated  by  synclinal  belts  of 
+ greenschist  to  lower  amphibolite  facies  meta  sedimentary  and  meta  volcanic  rocks. 
+ Collectively  called  the  Pilbara  Supergroup  they  range  in  age  from  2.8  to  3.0  Ga.  It  is 
+ unconformably overlain by late Archaean to early Proterozoic sediments and volcanics of the 
+ Mount Bruce Supergroup. 
+}
+
+{section: 2.1  Regional Geology, page_no: 9, 
+content: Differentiated Archaean layered mafic and ultramafic complexes occur throughout the Pilbara 
+although intrusions with a stratigraphic height in excess of 2kms are restricted to the West 
+Pilbara. The Munni Munni Igneous Complex (MMIC) is one of the largest and best preserved 
+of these complexes and has been dated at 2.92 Ga.
+}
+
+{section: 2.2  Geology of the Munni Munni Complex, page_no: 9, 
+content: The MMIC is a relatively large (25km x 9km) intrusive complex composed of an alternating 
+ sequence  of  ultramafic  rocks  overlain  by  a  thick  mafic  package  of  predominantly  gabbroic 
+ rock. Mapping by Hoatson (1992) suggests that the intrusion is in excess of 5km thick with the 
+ keel of ultramafic material 1.8km thick and the upper gabbroic package 3.6km thick. 
+The ultramafic portion of the intrusion has been sub-divided by Hoatson (1992) into nine sub-
+ zones containing varying proportions of websterite, olivine websterite, lherzolite, weherlite and 
+ minor  dunite.  Strong  magnetic  layering  apparent  in  regional  aero-magnetic  images  reflects 
+ serpentinised olivine and identifies the transitions into olivine dominant zones. 
+Rock  types  of  the  ultramafic  package  are  dominated  by  three  cumulus  mineral  phases, 
+ augite,  bronzite  and  olivine.  Intercumulus  minerals  include  plagioclase,  biotite,  magnetite, 
+ ilmenite,  pyrite,  pyrrhotite,  chalcopyrite  and  pentlandite  as  well  as  minor  proportions  of  the 
+ cumulate mineral phases trapped as inter-cumulus liquid. 
+The  uppermost  unit  of  the  ultramafic  zone  is  a  medium  to  coarse  grained  porphrytic 
+ websterite. The upper portion of this unit is the host to the PGE mineralised Ferguson Reef. 
+The most obvious alteration in the ultramafic series is the serpentinisation of olivine although 
+ pervasive talc alteration is also apparent. 
+The boundary between the lower ultramafic sequence and the upper gabbroic sequence is 
+ marked by the first appearance of cumulus plagioclase and is variable in nature from sharp to 
+ gradational over 8 – 10m.  
+The upper gabbroic material is a monotonous sequence of poorly layered gabbro to gabbro-
+ norite.  Local  variation  in  the  pigeonite  content  reflects  the  most  significant  mineralogical 
+ variation in the lower portion of the gabbro pile, although these variations are generally not 
+ traceable  between  drill  hole  sections.  Minor  anorthositic  gabbro  to  anorthosite  bands  have 
+ been  noted  in  a  number  of  drill  sections  but  are  generally  not  laterally  continuous.  Coarse 
+ gabbroic pegmatite sweats are found throughout the lower gabbro sequence. 
+   
+Approximately  800m  above  the  basal  gabbro  contact,  magnetite  first  appears  as  cumulate 
+ phase. This ‘magnetite in’ horizon marks the only significant and laterally continuous cumulus 
+ phase change in the gabbroic sequence. 
+Cumulus  mineralogy  of  the  gabbro  includes  plagioclase,  augite,  inverted  pigeonite  and 
+ magnetite.  Intercumulus  minerals  include  inverted  pigeonite,  clinopyroxene,  orthopyroxene, 
+ minor quartz and biotite. 
+Alteration within the gabbro is mostly related to deuteric sausseritisation with minor sodic and 
+ calcic alteration adjacent to major faults.  
+The southern portion of the MMIC is unconformably overlain by sediments and volcanics of 
+ the Mount Bruce Supergroup and more particularly the Fortescue Group. 
+Within  the  Fortescue  Group  four  tectono-stratigraphic  sequences  have  been  recognised  by 
+ Thorne and Trendall (2001). The lower most sequence is the Mount Roe Basalt which lies 
+ unconformably  on  the basement  granite  –  greenstone.  In  areas of  the  southern Hamersley 
+ Basin the Mount Roe Basalt is underlain by a poorly exposed and discontinuous sequence of 
+ sediments  and  volcanics  belonging  to  the  Bellary  Formation.  The  Hardey  Formation  is  the 
+ next tetono-stratigraphic sequence and is overlain by the Kylena/Boongal, Tumbiana/Pyradie 
+}
+
+{section: 2.2  Geology of the Munni Munni Complex, page_no: 10, 
+content: and  Maddina/Bunjinah  Formations  of  sequence  three.  The  uppermost  sequence  is  the
+ Jeerinah Formation. 
+In the project area units of the Hardey Formation and Kylena Formation are noted.
+In  the  project  area  the Hardey  Formation  is  seen  mostly  as  fine to  medium  grained  quartz 
+ sandstone to feldspathic sandstone with minor shale and siltstone beds. Some fine grained 
+ basaltic and minor tuffs have been recorded but they are subservient to the clastics. Historical 
+ mapping completed by Hunter Resources has indicated a semi-continuous horizon of felsic 
+ volcanics near the unconformity in the centre of the intrusive complex, although this has not 
+ been unambiguously identified in drilling completed during the current reporting period.
+The Kylena Formation is a fine to occasionally medium grained basalt to amygdaloidal basalt, 
+ with quartz and carbonate filled amygdales variable from 5mm-15mm long. In some samples 
+ the amygdales had been elongated and stretched. Percentage of the sample as amygdales is 
+ variable  between  5  –  50%  with  a  broad  decrease  noted  with  depth  in  some  intervals. 
+ Occasional  and  very  minor  quartzite  has  been  logged  in  some  of  the  drill  holes  within  the 
+ Kylena, although vertically narrow and laterally discontinuous. 
+ 
+}
+
+{section: 3.1  Exploration by Helix Resources –, page_no: 10, 
+content: No fieldwork was undertaken by Helix over the areas being surrendered. However, Helix did 
+ carry out assaying of stream samples collected by DeBeers over these areas.  
+ Samples were assayed at Ultratrace Laboratories for precious and base metals using a lead 
+ collection fire assay for Au, Pt and Pd and a mixed acid digest for Ag, As,  Bi, Pb, Cr, Cu, Ni 
+ and Zn. Details are included in appendix 1. 
+}
+
+{section: 3.2  Exploration by De Beers Australia Exploration Limited –, page_no: 10, 
+content: Diamond exploration by De Beers over the surrendered area involved reconnaissance stream 
+ sampling, and ground investigation of Hyperspectral Scanner anomalies. Sampling did not 
+ highlight any significantly anomalous areas for follow up diamond sampling on the 
+ surrendered areas 
+}
+
+{section: 4  Recommendations, page_no: 10, 
+content: The areas being outright surrendered have shown little prospectivity for diamonds or precious 
+ and base metals from the regional sampling carried out. Some areas of the tenements have 
+ been held through Mining Lease Applications where there is anomalism present and follow up 
+ work is warranted 
+}
+

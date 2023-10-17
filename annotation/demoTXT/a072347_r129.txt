@@ -1,0 +1,102 @@
+{section: SUMMARY, page_no: 1, 
+content: The Yandil tenement (E51/980) is located in the southeastern portion of the Yerrida Basin 
+ approximately 50 kilometres west of Wiluna, Western Australia.  Access to the Project is by the Great 
+ Northern Highway from Perth to Meekatharra, then via the unsealed Goldfields Highway from 
+ Meekatharra to the Paroo Station access road (~120km west of Meekatharra) and then onto the 
+ tenement via various station tracks.   
+During the reporting period the following exploration activities were completed (see Figure 1, 
+ Exploration Index Map). 
+The work was completed to progress exploration towards drilling for Magellan-style lead 
+ mineralisation.  At the end of the reporting period the heritage survey was still pending. 
+}
+
+{section: 1  INTRODUCTION, page_no: 3, 
+content: The Yandil tenement (E51/980) is located in the southeastern portion of the Yerrida Basin 
+ approximately 50 kilometres west of Wiluna, Western Australia (see Figure 2).  Access to the 
+ tenement is by the Great Northern Highway from Perth to Meekatharra, then via the unsealed 
+ Goldfields Highway from Meekatharra to the Paroo Station access road (123km west of Meekatharra) 
+ and then onto the tenement via various station tracks.   
+Geological consultants CSA Australia Pty Ltd (CSA) carries out exploration on behalf of the 
+ tenement owner (Magellan Metals Pty Ltd). 
+}
+
+{section: 2  OWNERSHIP AND TENURE, page_no: 3, 
+content: Magellan Metals Pty Ltd (MM) a subsidiary of Ivernia Inc, applied for a 70-block exploration licence 
+ in the Yandil area in April 2001.  Seven blocks were relinquished prior to granting of the 63 block 
+ tenement (E51/980) on the 3 rd February 2004.  The tenement has an annual rental of $6,237 and an 
+ annual expenditure commitment of $56,700.  Tenement boundaries are illustrated in Figure 1. 
+}
+
+{section: 3  REGIONAL GEOLOGY, page_no: 3, 
+content: The Yandil tenement is situated in the southeastern corner of the Palaeoproterozoic Yerrida Basin at 
+ the northern end of the Archaean Yilgarn Craton.  The Yerrida Basin is part of the Capricorn Orogen, 
+ a zone of low- to high-grade metamorphic rocks, magmatic belts, and low-grade volcano-sedimentary 
+ basins that were formed as a result of oblique collision between the Pilbara and Yilgarn Cratons about 
+ 1.8Ga.  The Yerrida Basin was probably formed at approximately 2.2Ga and was affected by the 
+ Capricorn Orogeny.   The Yerrida Basin has a faulted contact with the Bryah Basin in the west 
+ (Goodin Fault) and the Marymia Inlier in the north, and is unconformably overlain by rocks of the 
+ Earaheedy Basin in the east.  Rocks that have accumulated in the Yerrida Basin are assigned to the 
+ Yerrida Group (formerly part of the Glengarry Group) (Pirajno & Adamides, 2000). 
+The Yerrida Group is divided into the Windplain and Mooloogool Subgroups.   The Windplain 
+ Subgroup contains the Juderina and Johnson Cairn Formations, which include siliciclastic rocks, 
+ evaporites, argillites, and locally turbidites.  The rocks of the Windplain Subgroup were deposited in a 
+ shallow epicontinental sea, locally with sabkha environments.   The Mooloogool Subgroup was 
+ deposited in a high-energy environment, probably in a widening rift structure, surrounded by uplifted 
+ Archaean rocks of the Marymia and Goodin Inliers.  The Subgroup comprises four formations: The 
+ Doolgunna, Thaduna, Killara and Maraloou Formations (Pirajno & Adamides, 2000). 
+Within the Yandil area, the Yerrida Group is represented the Maraloou Formation (carbonaceous 
+ shale).  The Maraloou Formation consists of carbonaceous shale, finely laminated siltstone, 
+ argillaceous dolomitic limestone and interbedded siltstone with thin beds of limestone and 
+ dolomite.   Exposure of the shale and siltstone is poor due to preferential weathering, and 
+ alluvial plain covers much of the unit.   
+The uppermost Yelma Formation is locally preserved in the Yandil area as small outlier mesas of the 
+ Spinifex Range and subcropping areas in the colluvial plains.  In the nearby Magellan area, the Yelma 
+ Formation attains a maximum thickness of ~60m and comprises a basal fining-upwards clastic 
+ sequence of quartz sandstone and siltstone (~30m thick) that is overlain by a coarsening-upwards, 
+}
+
+{section: 3  REGIONAL GEOLOGY, page_no: 4, 
+content: poorly lithified and variably silcretized, chert breccia (~30m thick) thought to be of carbonate and 
+ evaporite origin.
+The Yerrida sediments are commonly flat lying to moderately dipping to the north and west.  
+ Northeasterly and southeasterly trending faults are the dominant structural feature, folding is very 
+ gentle and where described comprises NNW and NE open folds.  The Earaheedy sediments appear to 
+ have undergone relatively minor structural deformation. 
+}
+
+{section: 4  SUMMARY OF ACTIVITIES, page_no: 4, 
+content: During the reporting period the following exploration activities were completed (see Figure 1, 
+ Exploration Index Map). 
+The work was completed to progress exploration towards drilling for Magellan-style lead 
+ mineralisation.  At the end of the reporting period the heritage survey was still pending. 
+}
+
+{section: 4.1  GEOLOGICAL INVESTIGATION, page_no: 4, 
+content: Results from the prior year’s exploration programs (soil sampling, mapping and aerial photography) 
+ were assessed to determine what further work would be completed on the tenement.  As results of the 
+ geochemical survey were very disappointing (only four results show levels greater than 18ppm lead), 
+ planned mosaicing and orthorectification of the colour aerial photography over the Yandil area was 
+ postponed. 
+Scout drilling however was recommended in the hills (Yandil Range) north of Corner Well and south 
+ of Crystal Well on Paroo Station (Figure 3).   The drilling will test the mapped Yelma Formation 
+ sediments based on geological and structural similarities with the nearby Magellan tenements where 
+ several deposits of lead carbonate / sulphate mineralisation have been identified.  The proposed work 
+ program comprises: 
+}
+
+{section: 4.2  HERITAGE SURVEY, page_no: 4, 
+content: To allow the next phase of exploration work to be commenced at Yandil a request for a heritage 
+ survey was submitted to the Yamatji Land and Sea Council via Magellan’s consultant Jerome Frewen 
+ of Desert Management Pty Ltd.   
+It was hoped that the heritage survey could be completed in 2005 to allow drilling to follow early in 
+ 2006.   However, at the anniversary date, the heritage survey was pending and unlikely to be 
+ completed until May 2006. 
+}
+
+{section: 4.3  PEGGING, page_no: 5, 
+content: In preparation for the heritage survey, the proposed drill hole sites were pegged using a handheld GPS 
+ and access tracks were marked by flagging tape.   Jim Ford the pastoralist at Paroo Station was 
+ contacted and confirmed his availability to complete any clearing required (once all necessary 
+ approvals were in place). 
+}
+

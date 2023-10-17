@@ -1,0 +1,95 @@
+{section: Location and Access, page_no: 2, 
+content: P63/1322 is situated approximately 570km east of Perth and about 30km SSE of Norseman in 
+ Western Australia (Figure 1). It is situated at the northern end of Lake Dundas in a 
+ topographically flat area. Access to the tenement is via mine, exploration and station tracks 
+ from the sealed Coolgardie-Esperance Highway. The tracks can be impossible to traverse via 
+ vehicle when the ground is wet. No tracks lead directly to the tenement as it is situated 
+ entirely within the bounds of Lake Dundas.
+The tenement is situated on the Norseman (SI 51-02) 1:250,000 map sheet, and on the 
+ Norseman (3233) 1:100,000 sheet.
+}
+
+{section: Tenure, page_no: 2, 
+content: Tenement  P63/1322  is  held  and  operated  by  Mallee  Gold  Corporation  Ltd.    The  tenement  is 
+ 199.42Ha  in  area.  It  forms  one  of  number  of  tenements  that  comprise  Mallee  Gold 
+ Corporation’s Norseman Project.
+}
+
+{section: Regional Geology, page_no: 2, 
+content: P63/1322 is located near the southern end of the Archaean Norseman-Wiluna greenstone belt, 
+ which is highly  endowed  in  gold  and  nickel mineralisation.  The tenement covers granitic  and 
+ gneissic rocks which form part a suite of plutonic complexes which are ubiquitous across the 
+ Yilgarn  Craton.  The  volcanic,  intrusive  and  sedimentary  rocks  that  comprise  the  greenstone 
+}
+
+{section: Regional Geology, page_no: 3, 
+content: belts were largely deposited during a significant phase of extension that initiated at about 2700 
+ Ma.  However,  at  Norseman,  the  greenstone  belt  rocks  are  considerably  older,  with  felsic 
+ volcanic  rocks  dated  at  about  2960  Ma.  Subsequent  deformation,  which  predominantly 
+ occurred  during  the  westward  accretion  of  the  Norseman-Wiluna  Belt,  and  other  terranes  to 
+ the  east,  onto  the  a  large  continental  land  mass  (now  termed  the  Barlee  Terrane).  The 
+ widespread  granitic  complexes,  of  which  P63/1322  overlies  one,  were  intruded  into  across  the 
+ Yilgarn post-cratonisation.
+The Norseman area is highly endowed with gold and contains Australia’s longest running gold 
+ mine,  which to  date has  produced  over 5.5Moz  Au  from  the  Mararoa-Crown  (Main  Reef)  and 
+ North Royal reefs. The gold is typically hosted in narrow, high-grade quartz veins.
+}
+
+{section: Local Geology, page_no: 3, 
+content: Basement  rocks  under  P63/1322  comprise  Archaean  granite  and  gneiss,  which  is  not  exposed 
+ anywhere  within  the  tenement.  The  basement  is  entirely  overlain  by  lacustrine  sediments  of 
+ Lake Dundas.   
+}
+
+{section: Topography, page_no: 4, 
+content: P63/1322 overlies Lake Dundas and consequently has a very flat topography.  
+}
+
+{section: Previous Exploration, page_no: 4, 
+content: Despite it’s proximity to Norseman, no previous exploration could be identified on the 
+ tenement despite an exhaustive search of the GSWA Wamex database. 
+}
+
+{section: Work Completed, page_no: 4, 
+content: Digirock Pty Ltd (geological consultants) were contracted to review the project and to 
+ undertake planned exploration. 
+No on-ground work could be completed due to the lake containing water for most of the 
+ reporting period due to a very wet and extended summer cyclone season. Work undertaken 
+ was as follows: 
+}
+
+{section: Open File Data Compilation, page_no: 4, 
+content: An online search of available Mineral Exploration Open File reports was conducted on the MPR 
+ web site to determine if work has been completed on the tenement. No reports were located 
+ which had any exploration results on P63/1322. 
+}
+
+{section: Existing Data Compilation, page_no: 5, 
+content: Available data on the project area consisted of publicly available data, including GSWA 
+ 1:250,000 Geological Series Maps and Department of Land Information (DLI) 100,000 
+ topographic data. 
+This information was compiled into a GIS dataset. 
+}
+
+{section: Geophysical Data Acquisition, page_no: 5, 
+content: Gridded aeromagnetic and radiometric (uranium, thorium, potassium and total count) data 
+ were purchased from Fugro Airborne Surveys Pty Ltd. The data form part of their 200m-spaced 
+ Eastern Goldfields Multiclient Dataset. 
+The geophysical data are currently being interpreted to assist target generation. 
+}
+
+{section: Project Reviews, page_no: 5, 
+content: P63/1322 is currently under review. As part of this review existing data was compiled and the 
+ purchased geophysical data converted into GIS data layers.  
+At the time of writing this Annual Technical Report, CSA had not completed a completed report 
+ on their review of the tenements. However, meetings and field reconnaissance (see below) 
+ with CSA revealed that the tenement has very limited potential to host economic Pb-Zn 
+ mineralisation. 
+}
+
+{section: Conclusions and Recommendations, page_no: 6, 
+content: Given the lack of exposure on and lack of greenstone belt rocks, there should not be any 
+ ground-based exploration undertaken until a thorough aeromagnetic interpretation is 
+ undertaken. 
+}
+
