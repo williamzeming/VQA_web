@@ -20,7 +20,8 @@ function App() {
     const uploadButton = {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        paddingTop: '15px'
     };
 
     const [files, setFiles] = useState([]);

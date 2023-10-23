@@ -74,6 +74,10 @@ def serve_pdf(filename):
     cbot.send_initial_message(txt)
     return send_from_directory(directory='uploads', path=filename)
 
+@app.route('/images/<filename>', methods=['GET'])
+def serve_image(filename):
+    return send_from_directory(directory='annotation/visualized', path=filename, as_attachment=True)
+
 
 @app.route('/chat', methods=['POST'])
 def chat():

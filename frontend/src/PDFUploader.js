@@ -1,7 +1,7 @@
 import React from 'react';
 import {Input, Button, IconButton} from "@material-ui/core";
 import {makeStyles} from '@material-ui/core/styles';
-import AttachFileIcon from '@material-ui/icons/AttachFile';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import Box from '@mui/material/Box';
 import Alert from '@mui/material/Alert';
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     input: {
             display: 'none',
         },
-    button: {
+    Button: {
         marginRight: theme.spacing(2),
     },
 }));
@@ -54,18 +54,23 @@ function PDFUploader() {
         }
     };
 
+    const handleDownload = () => {
+        const filename = 'a078005_page-5.png';
+        window.location.href = `http://localhost:8988/images/${filename}`;
+  }
+
 
     return (
         <div>
             <div style={{textAlign:'center'}}>
-                <h2>Upload your PDF</h2>
                 <form onSubmit={handleUpload}>
                     <label htmlFor="pdfInput">
-                        <Button aria-label="upload picture" variant="outlined" component="span" color="primary" className={classes.button}>Choose a PDF</Button>
+                        <Button aria-label="upload picture" variant="outlined" component="span" color="primary" className={classes.Button}>Choose a PDF</Button>
                     </label>
                     <input type="file" accept="application/pdf" id="pdfInput" className={classes.input}
                            color="primary"/>
-                    <Button type="submit" variant="contained" startIcon={<CloudUploadIcon />} color="primary">Upload file</Button>
+                    <Button type="submit" variant="contained" startIcon={<CloudUploadIcon />} color="primary" className={classes.Button}>Upload file</Button>
+                    <Button variant="contained" color="tertiary" startIcon={<CloudDownloadIcon />} onClick={handleDownload} className={classes.Button}>Download</Button>
                 </form>
             </div>
             <div>
