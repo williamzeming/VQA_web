@@ -18,7 +18,7 @@ function ChatBox() {
             setReplies(prev => [...prev, {type: 'user', message: message}]);
 
             // Send the message to the server
-            const response = await axios.post('http://localhost:8988/chat', {message});
+            const response = await axios.post('http://192.168.0.13:8988/chat', {message});
 
             // Split the received response into main message and metadata
             // Extract main message and metadata from the response
@@ -43,7 +43,7 @@ function ChatBox() {
 
     return (
         <div style={{ margin: '0 auto'}}>
-            <div style={{borderBottom:'1px solid #1976d2', height: '690px', overflowY: 'scroll'}}>
+            <div style={{borderBottom:'1px solid #1976d2', height: '800px', overflowY: 'scroll'}}>
                 {replies.map((reply, index) => (
                     <div
                         key={index}

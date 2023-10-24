@@ -10,16 +10,35 @@ import CloseIcon from '@mui/icons-material/Close';
 import {Typography} from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        '& > *': {
-            margin: theme.spacing(1),
-        },
-    },
     input: {
             display: 'none',
         },
     Button: {
-        marginRight: theme.spacing(2),
+        marginRight: theme.spacing(1)
+    },
+    buttonRow: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: theme.spacing(1),
+    },
+    buttonContainer: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '100%',
+    },
+    flexibleButton: {
+        flex: 1,
+        margin: theme.spacing(0, 1),  // Adjust as needed for spacing between buttons
+    },
+    enhancedButton: {
+        padding: theme.spacing(2, 2),  // Increase vertical padding to increase height
+        flex: 1,
+        margin: theme.spacing(0, 1),  // Adjust as needed for spacing between buttons
+    },
+    firstButtonInRow: {
+        marginLeft:8,
     },
 }));
 
@@ -62,16 +81,19 @@ function PDFUploader() {
 
     return (
         <div>
-            <div style={{textAlign:'center'}}>
-                <form onSubmit={handleUpload}>
-                    <label htmlFor="pdfInput">
-                        <Button aria-label="upload picture" variant="outlined" component="span" color="primary" className={classes.Button}>Choose a PDF</Button>
-                    </label>
-                    <input type="file" accept="application/pdf" id="pdfInput" className={classes.input}
-                           color="primary"/>
-                    <Button type="submit" variant="contained" startIcon={<CloudUploadIcon />} color="primary" className={classes.Button}>Upload file</Button>
-                    <Button variant="contained" color="tertiary" startIcon={<CloudDownloadIcon />} onClick={handleDownload} className={classes.Button}>Download</Button>
-                </form>
+            <div style={{ textAlign: 'center' }}>
+                <div className={classes.buttonRow}>
+                    <form onSubmit={handleUpload} className={classes.buttonContainer}>
+                        <label htmlFor="pdfInput" className={classes.flexibleButton} style={{ marginLeft: 0 }}>
+                            <Button className={`${classes.enhancedButton} ${classes.firstButtonInRow}`} aria-label="upload picture" variant="outlined" component="span" color="primary" fullWidth>Choose PDF</Button>
+                        </label>
+                        <input type="file" accept="application/pdf" id="pdfInput" className={classes.input} color="primary" />
+                        <Button className={classes.enhancedButton} type="submit" variant="contained" startIcon={<CloudUploadIcon />} color="primary" fullWidth>Upload</Button>
+                    </form>
+                </div>
+                <div className={classes.buttonRow}>
+                    <Button className={classes.enhancedButton} variant="outlined" color="tertiary" startIcon={<CloudDownloadIcon />} onClick={handleDownload} fullWidth>Download</Button>
+                </div>
             </div>
             <div>
                 <Box sx={{width: '100%'}}

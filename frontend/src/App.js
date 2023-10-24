@@ -70,22 +70,25 @@ function App() {
     return (
         <div style={{backgroundColor: 'aliceblue'}}>
             {/*<Container maxWidth='xl' style={{backgroundColor: 'aliceblue'}}>*/}
-                <h1 align='center'>VQA is Query Application!</h1>
+
                 <Grid container spacing={2}>
-                    <Grid item xs={3} md={3}  lg={2} xl={1}>
+                    <Grid item xs={4} md={4}  lg={3} xl={3}>
                         <Paper elevation={5} style={{backgroundColor: 'white'}} sx={{
                             borderColor: 'grey',
                             borderWidth: 1,
                             borderStyle: 'black'
                         }}>
-                            <ListSubheader>Uploaded Files</ListSubheader>
+                            <div style={uploadButton}>
+                                <PDFUploader/>
+                            </div>
+                            {/*<ListSubheader>Uploaded Files</ListSubheader>*/}
                             <br />
-                            <FixedSizeList height={750} itemSize={50} itemCount={files.length}>
+                            <FixedSizeList height={730} itemSize={50} itemCount={files.length}>
                                 {renderRow}
                             </FixedSizeList>
                         </Paper>
                     </Grid>
-                    <Grid item xs={4} md={5} lg={5} xl={5}>
+                    <Grid item xs={4} md={5} lg={4} xl={4}>
                         <div align='center'>
                             <Paper elevation={5}>
                                 <div className="App">
@@ -93,7 +96,7 @@ function App() {
                                     <iframe
                                         src={pdfUrl}
                                         width="100%"
-                                        height="800"
+                                        height="900"
                                         type="application/pdf"
                                         className="PdfFrame"
                                     >
@@ -106,7 +109,7 @@ function App() {
 
                         </div>
                     </Grid>
-                    <Grid item xs={3} md={4} lg={5} xl={6}>
+                    <Grid item xs={4} md={3} lg={5} xl={5}>
                         <Paper elevation={5}>
                             <div align='left'>
                             <ChatBox/>
@@ -115,9 +118,9 @@ function App() {
 
                     </Grid>
                 </Grid>
-                <div style={uploadButton}>
-                    <PDFUploader/>
-                </div>
+                {/*<div style={uploadButton}>*/}
+                {/*    <PDFUploader/>*/}
+                {/*</div>*/}
             {/*</Container>*/}
         </div>
 
