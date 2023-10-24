@@ -13,7 +13,7 @@ import {Divider, ListSubheader, Paper} from "@mui/material";
 import {FixedSizeList} from 'react-window';
 import './App.css';
 import Box from "@mui/material/Box";
-import logo from './logo.png';
+import logo from './logo1.png';
 
 function App() {
 
