@@ -14,7 +14,6 @@ import {FixedSizeList} from 'react-window';
 import './App.css';
 
 
-
 function App() {
 
     const uploadButton = {
@@ -68,59 +67,59 @@ function App() {
     };
 
     return (
-        <div style={{backgroundColor: 'aliceblue'}}>
+        <div style={{backgroundColor: 'aliceblue', height: '100vh'}}>
             {/*<Container maxWidth='xl' style={{backgroundColor: 'aliceblue'}}>*/}
 
-                <Grid container spacing={2}>
-                    <Grid item xs={4} md={4}  lg={3} xl={3}>
-                        <Paper elevation={5} style={{backgroundColor: 'white'}} sx={{
-                            borderColor: 'grey',
-                            borderWidth: 1,
-                            borderStyle: 'black'
-                        }}>
-                            <div style={uploadButton}>
-                                <PDFUploader/>
-                            </div>
-                            {/*<ListSubheader>Uploaded Files</ListSubheader>*/}
-                            <br />
-                            <FixedSizeList height={730} itemSize={50} itemCount={files.length}>
-                                {renderRow}
-                            </FixedSizeList>
-                        </Paper>
-                    </Grid>
-                    <Grid item xs={4} md={5} lg={4} xl={4}>
-                        <div align='center'>
-                            <Paper elevation={5}>
-                                <div className="App">
+            <Grid container spacing={2} style={{height: '100%'}}>
+                <Grid item xs={3} md={4} lg={3} xl={3} style={{height: '100%'}}>
+                    <Paper elevation={5} style={{backgroundColor: 'white'}} sx={{
+                        borderColor: 'grey',
+                        borderWidth: 1,
+                        borderStyle: 'black'
+                    }} style={{height: '100%'}}>
+                        <div style={uploadButton}>
+                            <PDFUploader/>
+                        </div>
+                        {/*<ListSubheader>Uploaded Files</ListSubheader>*/}
+                        <br/>
+                        <FixedSizeList height={730} itemSize={50} itemCount={files.length}>
+                            {renderRow}
+                        </FixedSizeList>
+                    </Paper>
+                </Grid>
+                <Grid item xs={4} md={5} lg={5} xl={4} style={{height: '100vh', padding: 0}}>
+                    <div style={{height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                        <Paper elevation={5} style={{height: '100%', width: '100%'}}>
+                            <div className="App" style={{height: '100%'}}>
                                 {pdfUrl ? (
                                     <iframe
                                         src={pdfUrl}
                                         width="100%"
-                                        height="900"
+                                        height="100%"
                                         type="application/pdf"
                                         className="PdfFrame"
-                                    >
-                                    </iframe>
+                                        style={{border: 'none'}}  // to remove any default borders
+                                    ></iframe>
                                 ) : (
                                     <p>Loading PDF...</p>
                                 )}
                             </div>
-                            </Paper>
+                        </Paper>
+                    </div>
+                </Grid>
 
-                        </div>
-                    </Grid>
-                    <Grid item xs={4} md={3} lg={5} xl={5}>
-                        <Paper elevation={5}>
-                            <div align='left'>
+                <Grid item xs={4} md={3} lg={4} xl={5} style={{height: '100%'}}>
+                    <Paper elevation={5}>
+                        <div align='left'>
                             <ChatBox/>
                         </div>
-                        </Paper>
+                    </Paper>
 
-                    </Grid>
                 </Grid>
-                {/*<div style={uploadButton}>*/}
-                {/*    <PDFUploader/>*/}
-                {/*</div>*/}
+            </Grid>
+            {/*<div style={uploadButton}>*/}
+            {/*    <PDFUploader/>*/}
+            {/*</div>*/}
             {/*</Container>*/}
         </div>
 

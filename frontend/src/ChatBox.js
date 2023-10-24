@@ -42,8 +42,8 @@ function ChatBox() {
 
 
     return (
-        <div style={{ margin: '0 auto'}}>
-            <div style={{borderBottom:'1px solid #1976d2', height: '800px', overflowY: 'scroll'}}>
+        <div style={{ margin: '0 auto', height: '100vh'}} >
+                <div style={{borderBottom:'1px solid #1976d2',height:'90%', overflowY: 'scroll'}}>
                 {replies.map((reply, index) => (
                     <div
                         key={index}
