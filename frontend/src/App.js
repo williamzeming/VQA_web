@@ -12,15 +12,16 @@ import PictureAsPdfSharpIcon from '@mui/icons-material/PictureAsPdfSharp';
 import {Divider, ListSubheader, Paper} from "@mui/material";
 import {FixedSizeList} from 'react-window';
 import './App.css';
-
+import Box from "@mui/material/Box";
+import logo from './logo.png';
 
 function App() {
 
     const uploadButton = {
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'flex-start',
-        paddingTop: '15px'
+        marginTop: 'auto',
+        paddingBottom: '5%'
     };
 
     const [files, setFiles] = useState([]);
@@ -42,6 +43,9 @@ function App() {
             try {
                 const response = await axios.get('http://127.0.0.1:8988/get_filelist');
                 setFiles(response.data);
+                if (response.data.includes("[SAMPLE] welcome.pdf")) {
+                    handleClick("[SAMPLE] welcome.pdf");
+                }
             } catch (error) {
                 console.error("An error occurred while fetching the data: ", error);
             }
@@ -70,24 +74,45 @@ function App() {
         <div style={{backgroundColor: 'aliceblue', height: '100vh'}}>
             {/*<Container maxWidth='xl' style={{backgroundColor: 'aliceblue'}}>*/}
 
-            <Grid container spacing={2} style={{height: '100%'}}>
-                <Grid item xs={3} md={4} lg={3} xl={3} style={{height: '100%'}}>
-                    <Paper elevation={5} style={{backgroundColor: 'white'}} sx={{
-                        borderColor: 'grey',
-                        borderWidth: 1,
-                        borderStyle: 'black'
-                    }} style={{height: '100%'}}>
-                        <div style={uploadButton}>
-                            <PDFUploader/>
-                        </div>
+            <Grid container spacing={3} style={{height: '100%'}}>
+                <Grid item xs={3} md={4} lg={2} xl={2} style={{height: '100%'}}>
+                    <Paper
+                        elevation={5}
+                        style={{
+                            backgroundColor: 'white',
+                            height: '100%',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between'
+                        }}
+                        sx={{
+                            borderColor: 'grey',
+                            borderWidth: 1,
+                            borderStyle: 'black'
+                        }}
+                    >
                         {/*<ListSubheader>Uploaded Files</ListSubheader>*/}
-                        <br/>
+                        <Box
+                            component="img"
+                            sx={{
+                                width: '100%',
+                                borderRadius: '8px',
+                                paddingTop:2,
+                                paddingBottom:5
+                            }}
+                            alt="logo"
+                            src={logo}
+                        />
+
                         <FixedSizeList height={730} itemSize={50} itemCount={files.length}>
                             {renderRow}
                         </FixedSizeList>
+                        <div style={uploadButton}>
+                            <PDFUploader/>
+                        </div>
                     </Paper>
                 </Grid>
-                <Grid item xs={4} md={5} lg={5} xl={4} style={{height: '100vh', padding: 0}}>
+                <Grid item xs={4} md={5} lg={6} xl={5} style={{height: '100vh', padding: 0}}>
                     <div style={{height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                         <Paper elevation={5} style={{height: '100%', width: '100%'}}>
                             <div className="App" style={{height: '100%'}}>
@@ -117,10 +142,6 @@ function App() {
 
                 </Grid>
             </Grid>
-            {/*<div style={uploadButton}>*/}
-            {/*    <PDFUploader/>*/}
-            {/*</div>*/}
-            {/*</Container>*/}
         </div>
 
 

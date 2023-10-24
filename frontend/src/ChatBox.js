@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
-import Chip from '@mui/material-next/Chip';
+import logo2 from './logo2.png';
 import SendIcon from '@mui/icons-material/Send';
 import {TextField} from "@mui/material";
 
@@ -42,7 +42,14 @@ function ChatBox() {
 
 
     return (
-        <div style={{ margin: '0 auto', height: '100vh'}} >
+        <div
+            style={{
+                margin: '0 auto',
+                height: '100vh',
+                background: `url(${logo2}) no-repeat center center`,  // Set the logo as the background
+                backgroundSize: '25%'  // Set the logo size to 1/4 of the container's size
+            }}
+        >
                 <div style={{borderBottom:'1px solid #1976d2',height:'90%', overflowY: 'scroll'}}>
                 {replies.map((reply, index) => (
                     <div

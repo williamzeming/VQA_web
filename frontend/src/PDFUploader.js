@@ -9,10 +9,11 @@ import Collapse from '@mui/material/Collapse';
 import CloseIcon from '@mui/icons-material/Close';
 import {Typography} from "@mui/material";
 
+
 const useStyles = makeStyles((theme) => ({
     input: {
-            display: 'none',
-        },
+        display: 'none',
+    },
     Button: {
         marginRight: theme.spacing(1)
     },
@@ -38,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(0, 1),  // Adjust as needed for spacing between buttons
     },
     firstButtonInRow: {
-        marginLeft:8,
+        marginLeft: 8,
     },
 }));
 
@@ -76,23 +77,28 @@ function PDFUploader() {
     const handleDownload = () => {
         const filename = 'a078005_page-5.png';
         window.location.href = `http://localhost:8988/images/${filename}`;
-  }
+    }
 
 
     return (
         <div>
-            <div style={{ textAlign: 'center' }}>
+            <div style={{textAlign: 'center'}}>
                 <div className={classes.buttonRow}>
                     <form onSubmit={handleUpload} className={classes.buttonContainer}>
-                        <label htmlFor="pdfInput" className={classes.flexibleButton} style={{ marginLeft: 0 }}>
-                            <Button className={`${classes.enhancedButton} ${classes.firstButtonInRow}`} aria-label="upload picture" variant="outlined" component="span" color="primary" fullWidth>Choose PDF</Button>
+                        <label htmlFor="pdfInput" className={classes.flexibleButton} style={{marginLeft: 0}}>
+                            <Button className={`${classes.enhancedButton} ${classes.firstButtonInRow}`}
+                                    aria-label="upload picture" variant="outlined" component="span" color="primary"
+                                    fullWidth>Select PDF</Button>
                         </label>
-                        <input type="file" accept="application/pdf" id="pdfInput" className={classes.input} color="primary" />
-                        <Button className={classes.enhancedButton} type="submit" variant="contained" startIcon={<CloudUploadIcon />} color="primary" fullWidth>Upload</Button>
+                        <input type="file" accept="application/pdf" id="pdfInput" className={classes.input}
+                               color="primary"/>
+                        <Button className={classes.enhancedButton} type="submit" variant="contained"
+                                startIcon={<CloudUploadIcon/>} color="primary" fullWidth>Upload</Button>
                     </form>
                 </div>
                 <div className={classes.buttonRow}>
-                    <Button className={classes.enhancedButton} variant="outlined" color="primary" startIcon={<CloudDownloadIcon />} onClick={handleDownload} fullWidth>Download</Button>
+                    <Button className={classes.enhancedButton} variant="outlined" color="primary"
+                            startIcon={<CloudDownloadIcon/>} onClick={handleDownload} fullWidth>Download</Button>
                 </div>
             </div>
             <div>
