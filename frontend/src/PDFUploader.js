@@ -92,7 +92,7 @@ function PDFUploader() {
                     </form>
                 </div>
                 <div className={classes.buttonRow}>
-                    <Button className={classes.enhancedButton} variant="outlined" color="tertiary" startIcon={<CloudDownloadIcon />} onClick={handleDownload} fullWidth>Download</Button>
+                    <Button className={classes.enhancedButton} variant="outlined" color="primary" startIcon={<CloudDownloadIcon />} onClick={handleDownload} fullWidth>Download</Button>
                 </div>
             </div>
             <div>
