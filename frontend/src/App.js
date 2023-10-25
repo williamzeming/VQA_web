@@ -74,7 +74,7 @@ function App() {
         <div style={{backgroundColor: 'aliceblue', height: '100vh'}}>
             {/*<Container maxWidth='xl' style={{backgroundColor: 'aliceblue'}}>*/}
 
-            <Grid container spacing={3} style={{height: '100%'}}>
+            <Grid container spacing={2} style={{height: '100%'}}>
                 <Grid item xs={3} md={4} lg={2} xl={2} style={{height: '100%'}}>
                     <Paper
                         elevation={5}

@@ -7,7 +7,7 @@ import SendIcon from '@mui/icons-material/Send';
 import {TextField} from "@mui/material";
 
 function ChatBox() {
-    const recommdMap = ['Hello', 'How are you?', 'Goodbye'];
+    const recommdMap = ['Where is the project located?', 'What is the conclusion of the report?', 'What are the features of this area?'];
 
     const [message, setMessage] = useState('');
     const [replies, setReplies] = useState([]);
@@ -45,12 +45,12 @@ function ChatBox() {
         <div
             style={{
                 margin: '0 auto',
-                height: '100vh',
+                height: '99vh',
                 background: `url(${logo2}) no-repeat center center`,  // Set the logo as the background
                 backgroundSize: '25%'  // Set the logo size to 1/4 of the container's size
             }}
         >
-                <div style={{borderBottom:'1px solid #1976d2',height:'90%', overflowY: 'scroll'}}>
+                <div style={{borderBottom:'1px solid #1976d2',height:'88%', overflowY: 'scroll'}}>
                 {replies.map((reply, index) => (
                     <div
                         key={index}
@@ -87,6 +87,7 @@ function ChatBox() {
                         <Button
                             key={index}
                             variant="outlined"
+                            size="medium"
                             onClick={() => sendPresetMessage(msg)}
                         >
                             {msg}
