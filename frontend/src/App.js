@@ -37,6 +37,20 @@ function App() {
             console.error("An error occurred while fetching the file path: ", error);
         }
     };
+    const [clickCount, setClickCount] = useState(0);
+    const handleLogoClick = () => {
+        const newCount = clickCount + 1;
+        setClickCount(newCount);
+        const styles = [
+            'color: #00BFFF',
+            'text-shadow: 3px 3px 0px rgba(0,0,0,0.2)',
+        ].join(';');
+        const asciiArt =process.env.REACT_APP_ASCII_ART;
+        if (newCount === 3) {
+            console.log(`%c${asciiArt}`,styles);
+        }
+
+    };
 
     useEffect(() => {
         const fetchFiles = async () => {
@@ -100,6 +114,7 @@ function App() {
                                 paddingTop:2,
                                 paddingBottom:5
                             }}
+                            onClick={handleLogoClick}
                             alt="logo"
                             src={logo}
                         />

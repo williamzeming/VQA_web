@@ -6,10 +6,10 @@ from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 from chatbot import ChatBot
+
 app = Flask(__name__, static_folder="webroot")
 CORS(app)
 cbot = ChatBot()
-
 
 
 @app.route('/')
@@ -31,18 +31,14 @@ def allowed_file(filename):
 def upload():
     if 'file' not in request.files:
         return jsonify({"error": "No file part"}), 400
-
     file = request.files['file']
-
     if file.filename == '':
         return jsonify({"error": "No selected file"}), 400
-
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(filepath)
         return jsonify({"message": "File uploaded successfully", "file": filepath}), 200
-
     return jsonify({"error": "Invalid file type"}), 400
 
 
@@ -59,6 +55,7 @@ def get_filepath():
     print(filepath)
     return jsonify(filepath=filepath)
 
+
 def loadtxt(file_name):
     folder_path = './annotation/demoTXT'
     base_name, ext = os.path.splitext(file_name)
@@ -68,11 +65,13 @@ def loadtxt(file_name):
         testPDF = file.read()
     return testPDF
 
+
 @app.route('/pdfs/<filename>', methods=['GET'])
 def serve_pdf(filename):
     txt = loadtxt(filename)
     cbot.send_initial_message(txt)
     return send_from_directory(directory='uploads', path=filename)
+
 
 @app.route('/images/<filename>', methods=['GET'])
 def serve_image(filename):
@@ -85,10 +84,11 @@ def chat():
     message = data.get('message', '')
     print(message)
     reply = cbot.chat(message + "Don't give me the source yet")
-    source = cbot.chat("find the last answer's source. Enclose all your work for this step within triple quotes (\"\"\")., strictly write as format \'Sources: [Page number: page_no, Section: sectionName]\' , do not write another things in this question!")
+    source = cbot.chat(
+        "find the last answer's source. Enclose all your work for this step within triple quotes (\"\"\")., strictly write as format \'Sources: [Page number: page_no, Section: sectionName]\' , do not write another things in this question!")
     response = {
         'reply': reply,
-        'source':source
+        'source': source
     }
     print(response)
     return jsonify(response)
