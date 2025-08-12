@@ -21,3 +21,4 @@ npm install
 npm build
 ```
 move files from `bulid` folder to `webroot` folder
+![image](./webpage.png)
